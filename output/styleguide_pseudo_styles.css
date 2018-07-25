@@ -1,0 +1,1438 @@
+a.pseudo-class-active,
+a.pseudo-class-hover {
+  outline: 0;
+}
+
+a.pseudo-class-hover,
+a.pseudo-class-focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+a.pseudo-class-focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.sr-only-focusable.pseudo-class-active,
+.sr-only-focusable.pseudo-class-focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+a.text-primary.pseudo-class-hover,
+a.text-primary.pseudo-class-focus {
+  color: #286090;
+}
+
+a.text-success.pseudo-class-hover,
+a.text-success.pseudo-class-focus {
+  color: #2b542c;
+}
+
+a.text-info.pseudo-class-hover,
+a.text-info.pseudo-class-focus {
+  color: #245269;
+}
+
+a.text-warning.pseudo-class-hover,
+a.text-warning.pseudo-class-focus {
+  color: #66512c;
+}
+
+a.text-danger.pseudo-class-hover,
+a.text-danger.pseudo-class-focus {
+  color: #843534;
+}
+
+a.bg-primary.pseudo-class-hover,
+a.bg-primary.pseudo-class-focus {
+  background-color: #286090;
+}
+
+a.bg-success.pseudo-class-hover,
+a.bg-success.pseudo-class-focus {
+  background-color: #c1e2b3;
+}
+
+a.bg-info.pseudo-class-hover,
+a.bg-info.pseudo-class-focus {
+  background-color: #afd9ee;
+}
+
+a.bg-warning.pseudo-class-hover,
+a.bg-warning.pseudo-class-focus {
+  background-color: #f7ecb5;
+}
+
+a.bg-danger.pseudo-class-hover,
+a.bg-danger.pseudo-class-focus {
+  background-color: #e4b9b9;
+}
+
+blockquote p.pseudo-class-last-child,
+blockquote ul.pseudo-class-last-child,
+blockquote ol.pseudo-class-last-child {
+  margin-bottom: 0;
+}
+
+.table > caption + thead > tr.pseudo-class-first-child > th,
+.table > caption + thead > tr.pseudo-class-first-child > td,
+.table > colgroup + thead > tr.pseudo-class-first-child > th,
+.table > colgroup + thead > tr.pseudo-class-first-child > td,
+.table > thead.pseudo-class-first-child > tr.pseudo-class-first-child > th,
+.table > thead.pseudo-class-first-child > tr.pseudo-class-first-child > td {
+  border-top: 0;
+}
+
+.table-hover > tbody > tr.pseudo-class-hover {
+  background-color: #f5f5f5;
+}
+
+.table-hover > tbody > tr > td.active.pseudo-class-hover,
+.table-hover > tbody > tr > th.active.pseudo-class-hover,
+.table-hover > tbody > tr.active.pseudo-class-hover > td,
+.table-hover > tbody > tr.pseudo-class-hover > .active,
+.table-hover > tbody > tr.active.pseudo-class-hover > th {
+  background-color: #e8e8e8;
+}
+
+.table-hover > tbody > tr > td.success.pseudo-class-hover,
+.table-hover > tbody > tr > th.success.pseudo-class-hover,
+.table-hover > tbody > tr.success.pseudo-class-hover > td,
+.table-hover > tbody > tr.pseudo-class-hover > .success,
+.table-hover > tbody > tr.success.pseudo-class-hover > th {
+  background-color: #d0e9c6;
+}
+
+.table-hover > tbody > tr > td.info.pseudo-class-hover,
+.table-hover > tbody > tr > th.info.pseudo-class-hover,
+.table-hover > tbody > tr.info.pseudo-class-hover > td,
+.table-hover > tbody > tr.pseudo-class-hover > .info,
+.table-hover > tbody > tr.info.pseudo-class-hover > th {
+  background-color: #c4e3f3;
+}
+
+.table-hover > tbody > tr > td.warning.pseudo-class-hover,
+.table-hover > tbody > tr > th.warning.pseudo-class-hover,
+.table-hover > tbody > tr.warning.pseudo-class-hover > td,
+.table-hover > tbody > tr.pseudo-class-hover > .warning,
+.table-hover > tbody > tr.warning.pseudo-class-hover > th {
+  background-color: #faf2cc;
+}
+
+.table-hover > tbody > tr > td.danger.pseudo-class-hover,
+.table-hover > tbody > tr > th.danger.pseudo-class-hover,
+.table-hover > tbody > tr.danger.pseudo-class-hover > td,
+.table-hover > tbody > tr.pseudo-class-hover > .danger,
+.table-hover > tbody > tr.danger.pseudo-class-hover > th {
+  background-color: #ebcccc;
+}
+
+input[type="file"].pseudo-class-focus,
+input[type="radio"].pseudo-class-focus,
+input[type="checkbox"].pseudo-class-focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.form-control.pseudo-class-focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.has-success .form-control.pseudo-class-focus {
+  border-color: #2b542c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+}
+
+.has-warning .form-control.pseudo-class-focus {
+  border-color: #66512c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+}
+
+.has-error .form-control.pseudo-class-focus {
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+}
+
+.btn.pseudo-class-focus,
+.btn.pseudo-class-active.pseudo-class-focus,
+.btn.pseudo-class-active.focus,
+.btn.active.pseudo-class-focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn.pseudo-class-hover,
+.btn.pseudo-class-focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.btn.pseudo-class-active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn-default.pseudo-class-focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+
+.btn-default.pseudo-class-hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.btn-default.pseudo-class-active {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.btn-default.pseudo-class-active.pseudo-class-hover,
+.btn-default.pseudo-class-active.pseudo-class-focus,
+.btn-default.pseudo-class-active.focus,
+.btn-default.active.pseudo-class-hover,
+.btn-default.active.pseudo-class-focus,
+.open > .btn-default.dropdown-toggle.pseudo-class-hover,
+.open > .btn-default.dropdown-toggle.pseudo-class-focus {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+
+.btn-default.pseudo-class-active {
+  background-image: none;
+}
+
+.btn-default.disabled.pseudo-class-hover,
+.btn-default.disabled.pseudo-class-focus,
+.btn-default[disabled].pseudo-class-hover,
+.btn-default[disabled].pseudo-class-focus,
+fieldset[disabled] .btn-default.pseudo-class-hover,
+fieldset[disabled] .btn-default.pseudo-class-focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.btn-primary.pseudo-class-focus {
+  color: #fff;
+  background-color: #286090;
+  border-color: #122b40;
+}
+
+.btn-primary.pseudo-class-hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+.btn-primary.pseudo-class-active {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+.btn-primary.pseudo-class-active.pseudo-class-hover,
+.btn-primary.pseudo-class-active.pseudo-class-focus,
+.btn-primary.pseudo-class-active.focus,
+.btn-primary.active.pseudo-class-hover,
+.btn-primary.active.pseudo-class-focus,
+.open > .btn-primary.dropdown-toggle.pseudo-class-hover,
+.open > .btn-primary.dropdown-toggle.pseudo-class-focus {
+  color: #fff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+
+.btn-primary.pseudo-class-active {
+  background-image: none;
+}
+
+.btn-primary.disabled.pseudo-class-hover,
+.btn-primary.disabled.pseudo-class-focus,
+.btn-primary[disabled].pseudo-class-hover,
+.btn-primary[disabled].pseudo-class-focus,
+fieldset[disabled] .btn-primary.pseudo-class-hover,
+fieldset[disabled] .btn-primary.pseudo-class-focus {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+.btn-success.pseudo-class-focus {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #255625;
+}
+
+.btn-success.pseudo-class-hover {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+.btn-success.pseudo-class-active {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+.btn-success.pseudo-class-active.pseudo-class-hover,
+.btn-success.pseudo-class-active.pseudo-class-focus,
+.btn-success.pseudo-class-active.focus,
+.btn-success.active.pseudo-class-hover,
+.btn-success.active.pseudo-class-focus,
+.open > .btn-success.dropdown-toggle.pseudo-class-hover,
+.open > .btn-success.dropdown-toggle.pseudo-class-focus {
+  color: #fff;
+  background-color: #398439;
+  border-color: #255625;
+}
+
+.btn-success.pseudo-class-active {
+  background-image: none;
+}
+
+.btn-success.disabled.pseudo-class-hover,
+.btn-success.disabled.pseudo-class-focus,
+.btn-success[disabled].pseudo-class-hover,
+.btn-success[disabled].pseudo-class-focus,
+fieldset[disabled] .btn-success.pseudo-class-hover,
+fieldset[disabled] .btn-success.pseudo-class-focus {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.btn-info.pseudo-class-focus {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #1b6d85;
+}
+
+.btn-info.pseudo-class-hover {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+
+.btn-info.pseudo-class-active {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+
+.btn-info.pseudo-class-active.pseudo-class-hover,
+.btn-info.pseudo-class-active.pseudo-class-focus,
+.btn-info.pseudo-class-active.focus,
+.btn-info.active.pseudo-class-hover,
+.btn-info.active.pseudo-class-focus,
+.open > .btn-info.dropdown-toggle.pseudo-class-hover,
+.open > .btn-info.dropdown-toggle.pseudo-class-focus {
+  color: #fff;
+  background-color: #269abc;
+  border-color: #1b6d85;
+}
+
+.btn-info.pseudo-class-active {
+  background-image: none;
+}
+
+.btn-info.disabled.pseudo-class-hover,
+.btn-info.disabled.pseudo-class-focus,
+.btn-info[disabled].pseudo-class-hover,
+.btn-info[disabled].pseudo-class-focus,
+fieldset[disabled] .btn-info.pseudo-class-hover,
+fieldset[disabled] .btn-info.pseudo-class-focus {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+.btn-warning.pseudo-class-focus {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #985f0d;
+}
+
+.btn-warning.pseudo-class-hover {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+
+.btn-warning.pseudo-class-active {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+
+.btn-warning.pseudo-class-active.pseudo-class-hover,
+.btn-warning.pseudo-class-active.pseudo-class-focus,
+.btn-warning.pseudo-class-active.focus,
+.btn-warning.active.pseudo-class-hover,
+.btn-warning.active.pseudo-class-focus,
+.open > .btn-warning.dropdown-toggle.pseudo-class-hover,
+.open > .btn-warning.dropdown-toggle.pseudo-class-focus {
+  color: #fff;
+  background-color: #d58512;
+  border-color: #985f0d;
+}
+
+.btn-warning.pseudo-class-active {
+  background-image: none;
+}
+
+.btn-warning.disabled.pseudo-class-hover,
+.btn-warning.disabled.pseudo-class-focus,
+.btn-warning[disabled].pseudo-class-hover,
+.btn-warning[disabled].pseudo-class-focus,
+fieldset[disabled] .btn-warning.pseudo-class-hover,
+fieldset[disabled] .btn-warning.pseudo-class-focus {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+.btn-danger.pseudo-class-focus {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #761c19;
+}
+
+.btn-danger.pseudo-class-hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+
+.btn-danger.pseudo-class-active {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+
+.btn-danger.pseudo-class-active.pseudo-class-hover,
+.btn-danger.pseudo-class-active.pseudo-class-focus,
+.btn-danger.pseudo-class-active.focus,
+.btn-danger.active.pseudo-class-hover,
+.btn-danger.active.pseudo-class-focus,
+.open > .btn-danger.dropdown-toggle.pseudo-class-hover,
+.open > .btn-danger.dropdown-toggle.pseudo-class-focus {
+  color: #fff;
+  background-color: #ac2925;
+  border-color: #761c19;
+}
+
+.btn-danger.pseudo-class-active {
+  background-image: none;
+}
+
+.btn-danger.disabled.pseudo-class-hover,
+.btn-danger.disabled.pseudo-class-focus,
+.btn-danger[disabled].pseudo-class-hover,
+.btn-danger[disabled].pseudo-class-focus,
+fieldset[disabled] .btn-danger.pseudo-class-hover,
+fieldset[disabled] .btn-danger.pseudo-class-focus {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.btn-link.pseudo-class-active {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-link.pseudo-class-hover,
+.btn-link.pseudo-class-focus,
+.btn-link.pseudo-class-active {
+  border-color: transparent;
+}
+
+.btn-link.pseudo-class-hover,
+.btn-link.pseudo-class-focus {
+  color: #23527c;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.btn-link[disabled].pseudo-class-hover,
+.btn-link[disabled].pseudo-class-focus,
+fieldset[disabled] .btn-link.pseudo-class-hover,
+fieldset[disabled] .btn-link.pseudo-class-focus {
+  color: #777;
+  text-decoration: none;
+}
+
+.dropdown-toggle.pseudo-class-focus {
+  outline: 0;
+}
+
+.dropdown-menu > li > a.pseudo-class-hover,
+.dropdown-menu > li > a.pseudo-class-focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5;
+}
+
+.dropdown-menu > .active > a.pseudo-class-hover,
+.dropdown-menu > .active > a.pseudo-class-focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  background-color: #337ab7;
+}
+
+.dropdown-menu > .disabled > a.pseudo-class-hover,
+.dropdown-menu > .disabled > a.pseudo-class-focus {
+  color: #777;
+}
+
+.dropdown-menu > .disabled > a.pseudo-class-hover,
+.dropdown-menu > .disabled > a.pseudo-class-focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed;
+}
+
+.btn-group > .btn.pseudo-class-hover,
+.btn-group > .btn.pseudo-class-focus,
+.btn-group > .btn.pseudo-class-active,
+.btn-group-vertical > .btn.pseudo-class-hover,
+.btn-group-vertical > .btn.pseudo-class-focus,
+.btn-group-vertical > .btn.pseudo-class-active {
+  z-index: 2;
+}
+
+.btn-group > .btn.pseudo-class-first-child {
+  margin-left: 0;
+}
+
+.btn-group > .btn.pseudo-class-first-child:not(:last-child):not(.dropdown-toggle) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn-group > .btn.pseudo-class-last-child:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.btn-group > .btn-group.pseudo-class-first-child:not(:last-child) > .btn.pseudo-class-last-child,
+.btn-group > .btn-group.pseudo-class-first-child:not(:last-child) > .dropdown-toggle {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn-group > .btn-group.pseudo-class-last-child:not(:first-child) > .btn.pseudo-class-first-child {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.btn-group .dropdown-toggle.pseudo-class-active {
+  outline: 0;
+}
+
+.btn-group-vertical > .btn.pseudo-class-first-child:not(:last-child) {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group-vertical > .btn.pseudo-class-last-child:not(:first-child) {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.btn-group-vertical > .btn-group.pseudo-class-first-child:not(:last-child) > .btn.pseudo-class-last-child,
+.btn-group-vertical > .btn-group.pseudo-class-first-child:not(:last-child) > .dropdown-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group-vertical > .btn-group.pseudo-class-last-child:not(:first-child) > .btn.pseudo-class-first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.input-group .form-control.pseudo-class-focus {
+  z-index: 3;
+}
+
+.input-group .form-control.pseudo-class-first-child,
+.input-group-addon.pseudo-class-first-child,
+.input-group-btn.pseudo-class-first-child > .btn,
+.input-group-btn.pseudo-class-first-child > .btn-group > .btn,
+.input-group-btn.pseudo-class-first-child > .dropdown-toggle,
+.input-group-btn.pseudo-class-last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group-btn.pseudo-class-last-child > .btn-group:not(:last-child) > .btn {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.input-group-addon.pseudo-class-first-child {
+  border-right: 0;
+}
+
+.input-group .form-control.pseudo-class-last-child,
+.input-group-addon.pseudo-class-last-child,
+.input-group-btn.pseudo-class-last-child > .btn,
+.input-group-btn.pseudo-class-last-child > .btn-group > .btn,
+.input-group-btn.pseudo-class-last-child > .dropdown-toggle,
+.input-group-btn.pseudo-class-first-child > .btn:not(:first-child),
+.input-group-btn.pseudo-class-first-child > .btn-group:not(:first-child) > .btn {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.input-group-addon.pseudo-class-last-child {
+  border-left: 0;
+}
+
+.input-group-btn > .btn.pseudo-class-hover,
+.input-group-btn > .btn.pseudo-class-focus,
+.input-group-btn > .btn.pseudo-class-active {
+  z-index: 2;
+}
+
+.input-group-btn.pseudo-class-first-child > .btn,
+.input-group-btn.pseudo-class-first-child > .btn-group {
+  margin-right: -1px;
+}
+
+.input-group-btn.pseudo-class-last-child > .btn,
+.input-group-btn.pseudo-class-last-child > .btn-group {
+  z-index: 2;
+  margin-left: -1px;
+}
+
+.nav > li > a.pseudo-class-hover,
+.nav > li > a.pseudo-class-focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+.nav > li.disabled > a.pseudo-class-hover,
+.nav > li.disabled > a.pseudo-class-focus {
+  color: #777;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.nav .open > a.pseudo-class-hover,
+.nav .open > a.pseudo-class-focus {
+  background-color: #eee;
+  border-color: #337ab7;
+}
+
+.nav-tabs > li > a.pseudo-class-hover {
+  border-color: #eee #eee #ddd;
+}
+
+.nav-tabs > li.active > a.pseudo-class-hover,
+.nav-tabs > li.active > a.pseudo-class-focus {
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
+.nav-pills > li.active > a.pseudo-class-hover,
+.nav-pills > li.active > a.pseudo-class-focus {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.nav-tabs-justified > .active > a.pseudo-class-hover,
+.nav-tabs.nav-justified > .active > a.pseudo-class-hover,
+.nav-tabs-justified > .active > a.pseudo-class-focus,
+.nav-tabs.nav-justified > .active > a.pseudo-class-focus {
+  border: 1px solid #ddd;
+}
+
+.navbar-brand.pseudo-class-hover,
+.navbar-brand.pseudo-class-focus {
+  text-decoration: none;
+}
+
+.navbar-toggle.pseudo-class-focus {
+  outline: 0;
+}
+
+.navbar-default .navbar-brand.pseudo-class-hover,
+.navbar-default .navbar-brand.pseudo-class-focus {
+  color: #5e5e5e;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-default .navbar-nav > li > a.pseudo-class-hover,
+.navbar-default .navbar-nav > li > a.pseudo-class-focus {
+  color: #333;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-default .navbar-nav > .active > a.pseudo-class-hover,
+.navbar-default .navbar-nav > .active > a.pseudo-class-focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > .disabled > a.pseudo-class-hover,
+.navbar-default .navbar-nav > .disabled > a.pseudo-class-focus {
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-default .navbar-toggle.pseudo-class-hover,
+.navbar-default .navbar-toggle.pseudo-class-focus {
+  background-color: #ddd;
+}
+
+.navbar-default .navbar-nav > .open > a.pseudo-class-hover,
+.navbar-default .navbar-nav > .open > a.pseudo-class-focus {
+  background-color: #e7e7e7;
+  color: #555;
+}
+
+.navbar-default .navbar-link.pseudo-class-hover {
+  color: #333;
+}
+
+.navbar-default .btn-link.pseudo-class-hover,
+.navbar-default .btn-link.pseudo-class-focus {
+  color: #333;
+}
+
+.navbar-default .btn-link[disabled].pseudo-class-hover,
+.navbar-default .btn-link[disabled].pseudo-class-focus,
+fieldset[disabled] .navbar-default .btn-link.pseudo-class-hover,
+fieldset[disabled] .navbar-default .btn-link.pseudo-class-focus {
+  color: #ccc;
+}
+
+.navbar-inverse .navbar-brand.pseudo-class-hover,
+.navbar-inverse .navbar-brand.pseudo-class-focus {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-inverse .navbar-nav > li > a.pseudo-class-hover,
+.navbar-inverse .navbar-nav > li > a.pseudo-class-focus {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-inverse .navbar-nav > .active > a.pseudo-class-hover,
+.navbar-inverse .navbar-nav > .active > a.pseudo-class-focus {
+  color: #fff;
+  background-color: #090909;
+}
+
+.navbar-inverse .navbar-nav > .disabled > a.pseudo-class-hover,
+.navbar-inverse .navbar-nav > .disabled > a.pseudo-class-focus {
+  color: #444;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-inverse .navbar-toggle.pseudo-class-hover,
+.navbar-inverse .navbar-toggle.pseudo-class-focus {
+  background-color: #333;
+}
+
+.navbar-inverse .navbar-nav > .open > a.pseudo-class-hover,
+.navbar-inverse .navbar-nav > .open > a.pseudo-class-focus {
+  background-color: #090909;
+  color: #fff;
+}
+
+.navbar-inverse .navbar-link.pseudo-class-hover {
+  color: #fff;
+}
+
+.navbar-inverse .btn-link.pseudo-class-hover,
+.navbar-inverse .btn-link.pseudo-class-focus {
+  color: #fff;
+}
+
+.navbar-inverse .btn-link[disabled].pseudo-class-hover,
+.navbar-inverse .btn-link[disabled].pseudo-class-focus,
+fieldset[disabled] .navbar-inverse .btn-link.pseudo-class-hover,
+fieldset[disabled] .navbar-inverse .btn-link.pseudo-class-focus {
+  color: #444;
+}
+
+.pagination > li.pseudo-class-first-child > a,
+.pagination > li.pseudo-class-first-child > span {
+  margin-left: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.pagination > li.pseudo-class-last-child > a,
+.pagination > li.pseudo-class-last-child > span {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.pagination > li > a.pseudo-class-hover,
+.pagination > li > a.pseudo-class-focus,
+.pagination > li > span.pseudo-class-hover,
+.pagination > li > span.pseudo-class-focus {
+  z-index: 2;
+  color: #23527c;
+  background-color: #eee;
+  border-color: #ddd;
+}
+
+.pagination > .active > a.pseudo-class-hover,
+.pagination > .active > a.pseudo-class-focus,
+.pagination > .active > span.pseudo-class-hover,
+.pagination > .active > span.pseudo-class-focus {
+  z-index: 3;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+  cursor: default;
+}
+
+.pagination > .disabled > span.pseudo-class-hover,
+.pagination > .disabled > span.pseudo-class-focus,
+.pagination > .disabled > a.pseudo-class-hover,
+.pagination > .disabled > a.pseudo-class-focus {
+  color: #777;
+  background-color: #fff;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
+
+.pagination-lg > li.pseudo-class-first-child > a,
+.pagination-lg > li.pseudo-class-first-child > span {
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.pagination-lg > li.pseudo-class-last-child > a,
+.pagination-lg > li.pseudo-class-last-child > span {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.pagination-sm > li.pseudo-class-first-child > a,
+.pagination-sm > li.pseudo-class-first-child > span {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.pagination-sm > li.pseudo-class-last-child > a,
+.pagination-sm > li.pseudo-class-last-child > span {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.pager li > a.pseudo-class-hover,
+.pager li > a.pseudo-class-focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+.pager .disabled > a.pseudo-class-hover,
+.pager .disabled > a.pseudo-class-focus {
+  color: #777;
+  background-color: #fff;
+  cursor: not-allowed;
+}
+
+.label.pseudo-class-empty {
+  display: none;
+}
+
+a.label.pseudo-class-hover,
+a.label.pseudo-class-focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.label-default[href].pseudo-class-hover,
+.label-default[href].pseudo-class-focus {
+  background-color: #5e5e5e;
+}
+
+.label-primary[href].pseudo-class-hover,
+.label-primary[href].pseudo-class-focus {
+  background-color: #286090;
+}
+
+.label-success[href].pseudo-class-hover,
+.label-success[href].pseudo-class-focus {
+  background-color: #449d44;
+}
+
+.label-info[href].pseudo-class-hover,
+.label-info[href].pseudo-class-focus {
+  background-color: #31b0d5;
+}
+
+.label-warning[href].pseudo-class-hover,
+.label-warning[href].pseudo-class-focus {
+  background-color: #ec971f;
+}
+
+.label-danger[href].pseudo-class-hover,
+.label-danger[href].pseudo-class-focus {
+  background-color: #c9302c;
+}
+
+.badge.pseudo-class-empty {
+  display: none;
+}
+
+a.badge.pseudo-class-hover,
+a.badge.pseudo-class-focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.thumbnail.pseudo-class-hover,
+a.thumbnail.pseudo-class-focus {
+  border-color: #337ab7;
+}
+
+.media.pseudo-class-first-child {
+  margin-top: 0;
+}
+
+.list-group-item.pseudo-class-first-child {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.list-group-item.pseudo-class-last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+a.list-group-item.pseudo-class-hover,
+a.list-group-item.pseudo-class-focus,
+button.list-group-item.pseudo-class-hover,
+button.list-group-item.pseudo-class-focus {
+  text-decoration: none;
+  color: #555;
+  background-color: #f5f5f5;
+}
+
+.list-group-item.disabled.pseudo-class-hover,
+.list-group-item.disabled.pseudo-class-focus {
+  background-color: #eee;
+  color: #777;
+  cursor: not-allowed;
+}
+
+.list-group-item.disabled.pseudo-class-hover .list-group-item-heading,
+.list-group-item.disabled.pseudo-class-focus .list-group-item-heading {
+  color: inherit;
+}
+
+.list-group-item.disabled.pseudo-class-hover .list-group-item-text,
+.list-group-item.disabled.pseudo-class-focus .list-group-item-text {
+  color: #777;
+}
+
+.list-group-item.active.pseudo-class-hover,
+.list-group-item.active.pseudo-class-focus {
+  z-index: 2;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.list-group-item.active.pseudo-class-hover .list-group-item-heading,
+.list-group-item.active.pseudo-class-hover .list-group-item-heading > small,
+.list-group-item.active.pseudo-class-hover .list-group-item-heading > .small,
+.list-group-item.active.pseudo-class-focus .list-group-item-heading,
+.list-group-item.active.pseudo-class-focus .list-group-item-heading > small,
+.list-group-item.active.pseudo-class-focus .list-group-item-heading > .small {
+  color: inherit;
+}
+
+.list-group-item.active.pseudo-class-hover .list-group-item-text,
+.list-group-item.active.pseudo-class-focus .list-group-item-text {
+  color: #c7ddef;
+}
+
+a.list-group-item-success.pseudo-class-hover,
+a.list-group-item-success.pseudo-class-focus,
+button.list-group-item-success.pseudo-class-hover,
+button.list-group-item-success.pseudo-class-focus {
+  color: #3c763d;
+  background-color: #d0e9c6;
+}
+
+a.list-group-item-success.active.pseudo-class-hover,
+a.list-group-item-success.active.pseudo-class-focus,
+button.list-group-item-success.active.pseudo-class-hover,
+button.list-group-item-success.active.pseudo-class-focus {
+  color: #fff;
+  background-color: #3c763d;
+  border-color: #3c763d;
+}
+
+a.list-group-item-info.pseudo-class-hover,
+a.list-group-item-info.pseudo-class-focus,
+button.list-group-item-info.pseudo-class-hover,
+button.list-group-item-info.pseudo-class-focus {
+  color: #31708f;
+  background-color: #c4e3f3;
+}
+
+a.list-group-item-info.active.pseudo-class-hover,
+a.list-group-item-info.active.pseudo-class-focus,
+button.list-group-item-info.active.pseudo-class-hover,
+button.list-group-item-info.active.pseudo-class-focus {
+  color: #fff;
+  background-color: #31708f;
+  border-color: #31708f;
+}
+
+a.list-group-item-warning.pseudo-class-hover,
+a.list-group-item-warning.pseudo-class-focus,
+button.list-group-item-warning.pseudo-class-hover,
+button.list-group-item-warning.pseudo-class-focus {
+  color: #8a6d3b;
+  background-color: #faf2cc;
+}
+
+a.list-group-item-warning.active.pseudo-class-hover,
+a.list-group-item-warning.active.pseudo-class-focus,
+button.list-group-item-warning.active.pseudo-class-hover,
+button.list-group-item-warning.active.pseudo-class-focus {
+  color: #fff;
+  background-color: #8a6d3b;
+  border-color: #8a6d3b;
+}
+
+a.list-group-item-danger.pseudo-class-hover,
+a.list-group-item-danger.pseudo-class-focus,
+button.list-group-item-danger.pseudo-class-hover,
+button.list-group-item-danger.pseudo-class-focus {
+  color: #a94442;
+  background-color: #ebcccc;
+}
+
+a.list-group-item-danger.active.pseudo-class-hover,
+a.list-group-item-danger.active.pseudo-class-focus,
+button.list-group-item-danger.active.pseudo-class-hover,
+button.list-group-item-danger.active.pseudo-class-focus {
+  color: #fff;
+  background-color: #a94442;
+  border-color: #a94442;
+}
+
+.panel > .list-group.pseudo-class-first-child .list-group-item.pseudo-class-first-child,
+.panel > .panel-collapse > .list-group.pseudo-class-first-child .list-group-item.pseudo-class-first-child {
+  border-top: 0;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.panel > .list-group.pseudo-class-last-child .list-group-item.pseudo-class-last-child,
+.panel > .panel-collapse > .list-group.pseudo-class-last-child .list-group-item.pseudo-class-last-child {
+  border-bottom: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.panel > .panel-heading + .panel-collapse > .list-group .list-group-item.pseudo-class-first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.panel-heading + .list-group .list-group-item.pseudo-class-first-child {
+  border-top-width: 0;
+}
+
+.panel > .table.pseudo-class-first-child,
+.panel > .table-responsive.pseudo-class-first-child > .table.pseudo-class-first-child {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.panel > .table.pseudo-class-first-child > thead.pseudo-class-first-child > tr.pseudo-class-first-child,
+.panel > .table.pseudo-class-first-child > tbody.pseudo-class-first-child > tr.pseudo-class-first-child,
+.panel > .table-responsive.pseudo-class-first-child > .table.pseudo-class-first-child > thead.pseudo-class-first-child > tr.pseudo-class-first-child,
+.panel > .table-responsive.pseudo-class-first-child > .table.pseudo-class-first-child > tbody.pseudo-class-first-child > tr.pseudo-class-first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.panel > .table.pseudo-class-first-child > thead.pseudo-class-first-child > tr.pseudo-class-first-child td.pseudo-class-first-child,
+.panel > .table.pseudo-class-first-child > thead.pseudo-class-first-child > tr.pseudo-class-first-child th.pseudo-class-first-child,
+.panel > .table.pseudo-class-first-child > tbody.pseudo-class-first-child > tr.pseudo-class-first-child td.pseudo-class-first-child,
+.panel > .table.pseudo-class-first-child > tbody.pseudo-class-first-child > tr.pseudo-class-first-child th.pseudo-class-first-child,
+.panel > .table-responsive.pseudo-class-first-child > .table.pseudo-class-first-child > thead.pseudo-class-first-child > tr.pseudo-class-first-child td.pseudo-class-first-child,
+.panel > .table-responsive.pseudo-class-first-child > .table.pseudo-class-first-child > thead.pseudo-class-first-child > tr.pseudo-class-first-child th.pseudo-class-first-child,
+.panel > .table-responsive.pseudo-class-first-child > .table.pseudo-class-first-child > tbody.pseudo-class-first-child > tr.pseudo-class-first-child td.pseudo-class-first-child,
+.panel > .table-responsive.pseudo-class-first-child > .table.pseudo-class-first-child > tbody.pseudo-class-first-child > tr.pseudo-class-first-child th.pseudo-class-first-child {
+  border-top-left-radius: 3px;
+}
+
+.panel > .table.pseudo-class-first-child > thead.pseudo-class-first-child > tr.pseudo-class-first-child td.pseudo-class-last-child,
+.panel > .table.pseudo-class-first-child > thead.pseudo-class-first-child > tr.pseudo-class-first-child th.pseudo-class-last-child,
+.panel > .table.pseudo-class-first-child > tbody.pseudo-class-first-child > tr.pseudo-class-first-child td.pseudo-class-last-child,
+.panel > .table.pseudo-class-first-child > tbody.pseudo-class-first-child > tr.pseudo-class-first-child th.pseudo-class-last-child,
+.panel > .table-responsive.pseudo-class-first-child > .table.pseudo-class-first-child > thead.pseudo-class-first-child > tr.pseudo-class-first-child td.pseudo-class-last-child,
+.panel > .table-responsive.pseudo-class-first-child > .table.pseudo-class-first-child > thead.pseudo-class-first-child > tr.pseudo-class-first-child th.pseudo-class-last-child,
+.panel > .table-responsive.pseudo-class-first-child > .table.pseudo-class-first-child > tbody.pseudo-class-first-child > tr.pseudo-class-first-child td.pseudo-class-last-child,
+.panel > .table-responsive.pseudo-class-first-child > .table.pseudo-class-first-child > tbody.pseudo-class-first-child > tr.pseudo-class-first-child th.pseudo-class-last-child {
+  border-top-right-radius: 3px;
+}
+
+.panel > .table.pseudo-class-last-child,
+.panel > .table-responsive.pseudo-class-last-child > .table.pseudo-class-last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.panel > .table.pseudo-class-last-child > tbody.pseudo-class-last-child > tr.pseudo-class-last-child,
+.panel > .table.pseudo-class-last-child > tfoot.pseudo-class-last-child > tr.pseudo-class-last-child,
+.panel > .table-responsive.pseudo-class-last-child > .table.pseudo-class-last-child > tbody.pseudo-class-last-child > tr.pseudo-class-last-child,
+.panel > .table-responsive.pseudo-class-last-child > .table.pseudo-class-last-child > tfoot.pseudo-class-last-child > tr.pseudo-class-last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.panel > .table.pseudo-class-last-child > tbody.pseudo-class-last-child > tr.pseudo-class-last-child td.pseudo-class-first-child,
+.panel > .table.pseudo-class-last-child > tbody.pseudo-class-last-child > tr.pseudo-class-last-child th.pseudo-class-first-child,
+.panel > .table.pseudo-class-last-child > tfoot.pseudo-class-last-child > tr.pseudo-class-last-child td.pseudo-class-first-child,
+.panel > .table.pseudo-class-last-child > tfoot.pseudo-class-last-child > tr.pseudo-class-last-child th.pseudo-class-first-child,
+.panel > .table-responsive.pseudo-class-last-child > .table.pseudo-class-last-child > tbody.pseudo-class-last-child > tr.pseudo-class-last-child td.pseudo-class-first-child,
+.panel > .table-responsive.pseudo-class-last-child > .table.pseudo-class-last-child > tbody.pseudo-class-last-child > tr.pseudo-class-last-child th.pseudo-class-first-child,
+.panel > .table-responsive.pseudo-class-last-child > .table.pseudo-class-last-child > tfoot.pseudo-class-last-child > tr.pseudo-class-last-child td.pseudo-class-first-child,
+.panel > .table-responsive.pseudo-class-last-child > .table.pseudo-class-last-child > tfoot.pseudo-class-last-child > tr.pseudo-class-last-child th.pseudo-class-first-child {
+  border-bottom-left-radius: 3px;
+}
+
+.panel > .table.pseudo-class-last-child > tbody.pseudo-class-last-child > tr.pseudo-class-last-child td.pseudo-class-last-child,
+.panel > .table.pseudo-class-last-child > tbody.pseudo-class-last-child > tr.pseudo-class-last-child th.pseudo-class-last-child,
+.panel > .table.pseudo-class-last-child > tfoot.pseudo-class-last-child > tr.pseudo-class-last-child td.pseudo-class-last-child,
+.panel > .table.pseudo-class-last-child > tfoot.pseudo-class-last-child > tr.pseudo-class-last-child th.pseudo-class-last-child,
+.panel > .table-responsive.pseudo-class-last-child > .table.pseudo-class-last-child > tbody.pseudo-class-last-child > tr.pseudo-class-last-child td.pseudo-class-last-child,
+.panel > .table-responsive.pseudo-class-last-child > .table.pseudo-class-last-child > tbody.pseudo-class-last-child > tr.pseudo-class-last-child th.pseudo-class-last-child,
+.panel > .table-responsive.pseudo-class-last-child > .table.pseudo-class-last-child > tfoot.pseudo-class-last-child > tr.pseudo-class-last-child td.pseudo-class-last-child,
+.panel > .table-responsive.pseudo-class-last-child > .table.pseudo-class-last-child > tfoot.pseudo-class-last-child > tr.pseudo-class-last-child th.pseudo-class-last-child {
+  border-bottom-right-radius: 3px;
+}
+
+.panel > .table > tbody.pseudo-class-first-child > tr.pseudo-class-first-child th,
+.panel > .table > tbody.pseudo-class-first-child > tr.pseudo-class-first-child td {
+  border-top: 0;
+}
+
+.panel > .table-bordered > thead > tr > th.pseudo-class-first-child,
+.panel > .table-bordered > thead > tr > td.pseudo-class-first-child,
+.panel > .table-bordered > tbody > tr > th.pseudo-class-first-child,
+.panel > .table-bordered > tbody > tr > td.pseudo-class-first-child,
+.panel > .table-bordered > tfoot > tr > th.pseudo-class-first-child,
+.panel > .table-bordered > tfoot > tr > td.pseudo-class-first-child,
+.panel > .table-responsive > .table-bordered > thead > tr > th.pseudo-class-first-child,
+.panel > .table-responsive > .table-bordered > thead > tr > td.pseudo-class-first-child,
+.panel > .table-responsive > .table-bordered > tbody > tr > th.pseudo-class-first-child,
+.panel > .table-responsive > .table-bordered > tbody > tr > td.pseudo-class-first-child,
+.panel > .table-responsive > .table-bordered > tfoot > tr > th.pseudo-class-first-child,
+.panel > .table-responsive > .table-bordered > tfoot > tr > td.pseudo-class-first-child {
+  border-left: 0;
+}
+
+.panel > .table-bordered > thead > tr > th.pseudo-class-last-child,
+.panel > .table-bordered > thead > tr > td.pseudo-class-last-child,
+.panel > .table-bordered > tbody > tr > th.pseudo-class-last-child,
+.panel > .table-bordered > tbody > tr > td.pseudo-class-last-child,
+.panel > .table-bordered > tfoot > tr > th.pseudo-class-last-child,
+.panel > .table-bordered > tfoot > tr > td.pseudo-class-last-child,
+.panel > .table-responsive > .table-bordered > thead > tr > th.pseudo-class-last-child,
+.panel > .table-responsive > .table-bordered > thead > tr > td.pseudo-class-last-child,
+.panel > .table-responsive > .table-bordered > tbody > tr > th.pseudo-class-last-child,
+.panel > .table-responsive > .table-bordered > tbody > tr > td.pseudo-class-last-child,
+.panel > .table-responsive > .table-bordered > tfoot > tr > th.pseudo-class-last-child,
+.panel > .table-responsive > .table-bordered > tfoot > tr > td.pseudo-class-last-child {
+  border-right: 0;
+}
+
+.panel > .table-bordered > thead > tr.pseudo-class-first-child > td,
+.panel > .table-bordered > thead > tr.pseudo-class-first-child > th,
+.panel > .table-bordered > tbody > tr.pseudo-class-first-child > td,
+.panel > .table-bordered > tbody > tr.pseudo-class-first-child > th,
+.panel > .table-responsive > .table-bordered > thead > tr.pseudo-class-first-child > td,
+.panel > .table-responsive > .table-bordered > thead > tr.pseudo-class-first-child > th,
+.panel > .table-responsive > .table-bordered > tbody > tr.pseudo-class-first-child > td,
+.panel > .table-responsive > .table-bordered > tbody > tr.pseudo-class-first-child > th {
+  border-bottom: 0;
+}
+
+.panel > .table-bordered > tbody > tr.pseudo-class-last-child > td,
+.panel > .table-bordered > tbody > tr.pseudo-class-last-child > th,
+.panel > .table-bordered > tfoot > tr.pseudo-class-last-child > td,
+.panel > .table-bordered > tfoot > tr.pseudo-class-last-child > th,
+.panel > .table-responsive > .table-bordered > tbody > tr.pseudo-class-last-child > td,
+.panel > .table-responsive > .table-bordered > tbody > tr.pseudo-class-last-child > th,
+.panel > .table-responsive > .table-bordered > tfoot > tr.pseudo-class-last-child > td,
+.panel > .table-responsive > .table-bordered > tfoot > tr.pseudo-class-last-child > th {
+  border-bottom: 0;
+}
+
+.close.pseudo-class-hover,
+.close.pseudo-class-focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.carousel-control.pseudo-class-hover,
+.carousel-control.pseudo-class-focus {
+  outline: 0;
+  color: #fff;
+  text-decoration: none;
+  opacity: .9;
+  filter: alpha(opacity=90);
+}
+
+a.pseudo-class-visited {
+  color: gray;
+}
+
+a.pseudo-class-hover {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+a.pseudo-class-active,
+a.pseudo-class-focus {
+  color: gray;
+  text-decoration: none;
+}
+
+a.pseudo-class-hover {
+  text-decoration: none;
+}
+
+p.pseudo-class-last-of-type {
+  margin-bottom: 0;
+}
+
+.btn-light.pseudo-class-hover,
+.btn-light.pseudo-class-focus {
+  background-color: gray;
+  border-color: gray;
+  color: #fff;
+}
+
+.btn-semi-light.pseudo-class-hover,
+.btn-semi-light.pseudo-class-focus {
+  background-color: #4d4d4d;
+  border-color: #4d4d4d;
+  color: #fff;
+}
+
+.btn-dark.pseudo-class-hover,
+.btn-dark.pseudo-class-focus {
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #fff;
+}
+
+.btn-default.pseudo-class-hover,
+.btn-default.pseudo-class-focus {
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+.btn-primary.pseudo-class-hover,
+.btn-primary.pseudo-class-focus {
+  background-color: #217dbb;
+  border-color: #217dbb;
+}
+
+.btn-success.pseudo-class-hover,
+.btn-success.pseudo-class-focus {
+  background-color: #25a25a;
+  border-color: #25a25a;
+}
+
+.btn-info.pseudo-class-hover,
+.btn-info.pseudo-class-focus {
+  background-color: #3b9cde;
+  border-color: #3b9cde;
+}
+
+.btn-warning.pseudo-class-hover,
+.btn-warning.pseudo-class-focus {
+  background-color: #c87f0a;
+  border-color: #c87f0a;
+}
+
+.btn-danger.pseudo-class-hover,
+.btn-danger.pseudo-class-focus {
+  background-color: #d62c1a;
+  border-color: #d62c1a;
+}
+
+a.pseudo-class-focus,
+button.pseudo-class-focus,
+.btn.pseudo-class-focus {
+  outline: none;
+}
+
+.alert.pseudo-class-last-child {
+  margin-bottom: 0;
+}
+
+.alert-success .close.pseudo-class-hover {
+  color: #000;
+}
+
+.alert-info .close.pseudo-class-hover {
+  color: #0b2c42;
+}
+
+.alert-warning .close.pseudo-class-hover {
+  color: #060400;
+}
+
+.alert-danger .close.pseudo-class-hover {
+  color: #200704;
+}
+
+.btn-group--header button.pseudo-class-hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.form-control.pseudo-class-focus {
+  border-color: #b3b3b3;
+  -webkit-box-shadow: 0 0 0;
+  -ms-box-shadow: 0 0 0;
+  -o-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+
+.input-group-addon .quantity-right-plus.pseudo-class-hover,
+.input-group-addon .quantity-left-minus.pseudo-class-hover {
+  color: #4d4d4d;
+}
+
+.input-number.pseudo-class-focus {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.table-responsive-custom thead > tr > th.pseudo-class-first-child {
+  text-align: left;
+  padding-left: 0;
+}
+
+.table-responsive-custom thead > tr > th.pseudo-class-last-child {
+  text-align: right;
+}
+
+.table-responsive-custom tbody > tr > td.pseudo-class-first-child {
+  text-align: left;
+  padding-left: 0;
+}
+
+.table-responsive-custom tbody > tr > td.pseudo-class-last-child {
+  text-align: right;
+}
+
+.tabs--default .nav-tabs > li.active > a.pseudo-class-hover {
+  border-bottom: 1px solid #333;
+}
+
+.tabs--default .nav-tabs > li > a.pseudo-class-hover,
+.tabs--default .nav-tabs > li > a.pseudo-class-focus {
+  background-color: transparent;
+}
+
+.tabs--default .nav-tabs > li > a.pseudo-class-hover {
+  border: none;
+  border-bottom: 1px solid transparent;
+  color: #333;
+}
+
+.tabs--media .nav-tabs > li.active > a.pseudo-class-hover {
+  border-bottom: 1px solid #333;
+}
+
+.tabs--media .nav-tabs > li > a.pseudo-class-hover,
+.tabs--media .nav-tabs > li > a.pseudo-class-focus {
+  background-color: transparent;
+}
+
+.tabs--media .nav-tabs > li > a.pseudo-class-hover {
+  border: none;
+  border-bottom: 1px solid transparent;
+  color: #333;
+}
+
+.tabs--design-2 .nav-tabs > li.active > a.pseudo-class-hover {
+  border-bottom: 1px solid #333;
+}
+
+.tabs--design-2 .nav-tabs > li > a.pseudo-class-hover,
+.tabs--design-2 .nav-tabs > li > a.pseudo-class-focus {
+  background-color: transparent;
+}
+
+.tabs--design-2 .nav-tabs > li > a.pseudo-class-hover {
+  border: none;
+  border-bottom: 1px solid transparent;
+  color: #333;
+}
+
+.tabs--vertical .nav-tabs > li.active > a.pseudo-class-hover {
+  border-bottom: 1px solid transparent;
+  border-left: 6px solid #4d4d4d;
+}
+
+.tabs--vertical .nav-tabs > li > a.pseudo-class-hover,
+.tabs--vertical .nav-tabs > li > a.pseudo-class-focus {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.tabs--vertical .nav-tabs > li > a.pseudo-class-hover {
+  border: none;
+  border-bottom: 1px solid transparent;
+  border-left: 6px solid #b3b3b3;
+  color: #333;
+}
+
+.media-left .img-link.pseudo-class-hover {
+  border: 1px solid #4d4d4d;
+}
+
+.panel.pseudo-class-last-of-type {
+  margin-bottom: 0;
+}

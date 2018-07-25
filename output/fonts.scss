@@ -1,0 +1,83 @@
+@import "./utilities/mixins";
+@import "./theme/fonts/typo";
+body {
+    @include font($base-font, normal, 400);
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include font($base-font, normal, 400);
+    margin: 0;
+}
+
+h1 {
+    @include font-size(4);
+}
+
+h2 {
+    @include font-size(3.6);
+}
+
+h3 {
+    @include font-size(3.2);
+}
+
+h4 {
+    @include font-size(2.8);
+}
+
+h5 {
+    @include font-size(2.4);
+}
+
+h6 {
+    @include font-size(2);
+}
+
+.btn {
+    @include font-size(1.8);
+}
+
+.container {
+    .jumbotron {
+        p {
+            @include font-size(1.8);
+            font-weight: 400;
+        }
+        .btn-cta {
+            @include font-size(2.2);
+        }
+    }
+}
+
+.#{$global} {
+    &-title {
+        @include font($title-font, normal, 400);
+    }
+    &-carousel {
+        &__control {
+            .carousel-control {
+                @include font-size(5);
+            }
+        }
+    }
+}
+
+.navbar-brand {
+    @include font-size(3.5);
+    line-height: 1.2;
+    
+}
+
+.social-icons {
+    >li {
+        >a {
+            @include font-size(2);
+        }
+    }
+}

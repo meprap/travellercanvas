@@ -1,0 +1,11 @@
+.hr {
+    border: 0;
+    border-bottom: 1px solid transparent;
+    height: 1px;
+    display: block;
+    padding: 0;
+    margin: 5px 0;
+    &--option-1 {
+        border-color: $color-10;
+    }
+}

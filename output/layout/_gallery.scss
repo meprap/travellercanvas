@@ -1,0 +1,60 @@
+.#{$global} {
+    &-gallery {
+        &-home {
+            position: relative;
+            &__list {
+                overflow: hidden;
+                white-space: nowrap;
+                @include font-size(0);
+                position: relative;
+                @include transition(all, .5s, ease);
+                margin-bottom: 0;
+                >li {
+                    width: 20%;
+                    display: inline-block;
+                    vertical-align: top;
+                    @include font-size(1.6);
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    margin-bottom: -4px;
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                    &:nth-child(5) {
+                        padding-right: 0;
+                    }
+                    @media(min-width: $screen-md-min) and (max-width: $screen-md-max) {
+                        width: 25%;
+                        &:nth-child(4) {
+                            padding-right: 0;
+                        }
+                    }
+                    @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                        width: 33.333333%;
+                        &:nth-child(3) {
+                            padding-right: 0;
+                        }
+                    }
+                    @media(max-width: $screen-xs-max) {
+                        width: 50%;
+                        &:nth-child(2) {
+                            padding-right: 0;
+                        }
+                    }
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            .btn-gallery-home-more {
+                @include centerer(true, true);
+                z-index: 10;
+            }
+        }
+    }
+}

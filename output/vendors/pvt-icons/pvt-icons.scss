@@ -1,0 +1,298 @@
+@import "variables/variables";
+
+@font-face {
+    font-family: 'PV-Themes';
+    src: url('#{$pvi-font-path}/PV-Themes.eot?uj9qzw');
+    src: url('#{$pvi-font-path}/PV-Themes.eot?uj9qzw#iefix') format('embedded-opentype'),
+    url('#{$pvi-font-path}/PV-Themes.ttf?uj9qzw') format('truetype'),
+    url('#{$pvi-font-path}/PV-Themes.woff?uj9qzw') format('woff'),
+    url('#{$pvi-font-path}/PV-Themes.svg?uj9qzw#modern') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="pvi-"], [class*=" pvi-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'PV-Themes' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pvi-fbmessanger {
+  &:before {
+    content: $pvi-fbmessanger;
+  }
+}
+.pvi-brand {
+  &:before {
+    content: $pvi-brand;
+  }
+}
+.pvi-brand-name {
+  &:before {
+    content: $pvi-brand-name;
+  }
+}
+.pvi-calendar {
+  &:before {
+    content: $pvi-calendar;
+  }
+}
+.pvi-events {
+  &:before {
+    content: $pvi-events;
+  }
+}
+.pvi-map {
+  &:before {
+    content: $pvi-map;
+  }
+}
+.pvi-mail {
+  &:before {
+    content: $pvi-mail;
+  }
+}
+.pvi-multiple-images {
+  &:before {
+    content: $pvi-multiple-images;
+  }
+}
+.pvi-location {
+  &:before {
+    content: $pvi-location;
+  }
+}
+.pvi-thin-up {
+  &:before {
+    content: $pvi-thin-up;
+  }
+}
+.pvi-thin-down {
+  &:before {
+    content: $pvi-thin-down;
+  }
+}
+.pvi-thin-right {
+  &:before {
+    content: $pvi-thin-right;
+  }
+}
+.pvi-thin-left {
+  &:before {
+    content: $pvi-thin-left;
+  }
+}
+.pvi-help {
+  &:before {
+    content: $pvi-help;
+  }
+}
+.pvi-close {
+  &:before {
+    content: $pvi-close;
+  }
+}
+.pvi-star-border {
+  &:before {
+    content: $pvi-star-border;
+  }
+}
+.pvi-favorite-border {
+  &:before {
+    content: $pvi-favorite-border;
+  }
+}
+.pvi-star {
+  &:before {
+    content: $pvi-star;
+  }
+}
+.pvi-touch {
+  &:before {
+    content: $pvi-touch;
+  }
+}
+.pvi-more-vert {
+  &:before {
+    content: $pvi-more-vert;
+  }
+}
+.pvi-more-horiz {
+  &:before {
+    content: $pvi-more-horiz;
+  }
+}
+.pvi-phone {
+  &:before {
+    content: $pvi-phone;
+  }
+}
+.pvi-arrow-drop-up {
+  &:before {
+    content: $pvi-arrow-drop-up;
+  }
+}
+.pvi-arrow-drop-down {
+  &:before {
+    content: $pvi-arrow-drop-down;
+  }
+}
+.pvi-hamburger {
+  &:before {
+    content: $pvi-hamburger;
+  }
+}
+.pvi-video {
+  &:before {
+    content: $pvi-video;
+  }
+}
+.pvi-arrow-right {
+  &:before {
+    content: $pvi-arrow-right;
+  }
+}
+.pvi-arrow-left {
+  &:before {
+    content: $pvi-arrow-left;
+  }
+}
+.pvi-arrow-down {
+  &:before {
+    content: $pvi-arrow-down;
+  }
+}
+.pvi-arrow-up {
+  &:before {
+    content: $pvi-arrow-up;
+  }
+}
+.pvi-birthday-cake {
+  &:before {
+    content: $pvi-birthday-cake;
+  }
+}
+.pvi-cart {
+  &:before {
+    content: $pvi-cart;
+  }
+}
+.pvi-user {
+  &:before {
+    content: $pvi-user;
+  }
+}
+.pvi-tripadvisor {
+  &:before {
+    content: $pvi-tripadvisor;
+  }
+}
+.pvi-alarm {
+  &:before {
+    content: $pvi-alarm;
+  }
+}
+.pvi-images {
+  &:before {
+    content: $pvi-images;
+  }
+}
+.pvi-yelp {
+  &:before {
+    content: $pvi-yelp;
+  }
+}
+.pvi-pinterest {
+  &:before {
+    content: $pvi-pinterest;
+  }
+}
+.pvi-lastfm {
+  &:before {
+    content: $pvi-lastfm;
+  }
+}
+.pvi-linkedin {
+  &:before {
+    content: $pvi-linkedin;
+  }
+}
+.pvi-skype {
+  &:before {
+    content: $pvi-skype;
+  }
+}
+.pvi-soundcloud {
+  &:before {
+    content: $pvi-soundcloud;
+  }
+}
+.pvi-tumblr {
+  &:before {
+    content: $pvi-tumblr;
+  }
+}
+.pvi-500px {
+  &:before {
+    content: $pvi-500px;
+  }
+}
+.pvi-behance {
+  &:before {
+    content: $pvi-behance;
+  }
+}
+.pvi-flickr {
+  &:before {
+    content: $pvi-flickr;
+  }
+}
+.pvi-vimeo {
+  &:before {
+    content: $pvi-vimeo;
+  }
+}
+.pvi-youtube {
+  &:before {
+    content: $pvi-youtube;
+  }
+}
+.pvi-twitter {
+  &:before {
+    content: $pvi-twitter;
+  }
+}
+.pvi-spotify {
+  &:before {
+    content: $pvi-spotify;
+  }
+}
+.pvi-whatsapp {
+  &:before {
+    content: $pvi-whatsapp;
+  }
+}
+.pvi-instagram {
+  &:before {
+    content: $pvi-instagram;
+  }
+}
+.pvi-facebook {
+  &:before {
+    content: $pvi-facebook;
+  }
+}
+.pvi-google-plus {
+  &:before {
+    content: $pvi-google-plus;
+  }
+}

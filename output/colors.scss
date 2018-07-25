@@ -1,0 +1,156 @@
+@import "theme/colors/default";
+
+a {
+    @include links($color-black, $color-black, $color-black, $color-black);
+}
+
+.form-control {
+    border-color: $color-border;
+    &:hover,
+    &:focus {
+        border-color: $color-border-hover;
+    }
+}
+
+.btn {
+    &-link {
+        @include links($color-black, $color-black, $color-base, $color-black);
+    }
+    &-cta {
+        background-color: $color-white;
+        border-color: $color-black;
+        color: $color-black;
+        &:hover {
+            background-color: $color-base;
+            border-color: $color-base;
+            color: $color-white;
+        }
+    }
+    &-default {
+        background-color: $color-white;
+        border-color: $color-white;
+        color: $color-black;
+        &:hover {
+            background-color: $color-base;
+            border-color: $color-base;
+            color: $color-white;
+        }
+    }
+    &-primary {
+        background-color: $color-black;
+        border-color: $color-black;
+        color: $color-white;
+        &:hover {
+            background-color: $color-base;
+            border-color: $color-base;
+            color: $color-white;
+        }
+    }
+}
+
+.shop-now {
+    background-color: $color-white;
+    border-color: $color-black;
+    &:hover {
+        background-color: $color-base;
+        border-color: $color-base;
+        color: $color-white !important;
+    }
+}
+
+.hr {
+    &--option-1 {
+        border-color: $color-base;
+    }
+    &--option-2 {
+        border-color: $color-white;
+    }
+}
+
+.#{$global} {
+    &-header {
+        background-color: $color-header-bg;
+    }
+    &-main {
+        &--content {
+            border-color: black(.1);
+        }
+    }
+    &-gallery {
+        &-home {
+            &__list {
+                &:after {
+                    background-color: black(.5);
+                }
+            }
+        }
+    }
+    &-owl-carousel {
+        .card {
+            background: $color-white;
+            &__no-img {
+                background-color: black(.1);
+            }
+        }
+        .owl-nav {
+            .owl-next,
+            .owl-prev {
+                color: $color-black;
+                &:hover {
+                    color: $color-base;
+                }
+            }
+        }
+    }
+    &-footer {
+        background-color: $color-footer-bg;
+        color: $color-white;
+        a {
+            @include links($color-white, $color-white, white(.5), $color-white);
+        }
+        h6 {
+            color: $color-base;
+        }
+    }
+}
+
+.navbar-brand {
+    @include links($color-black, $color-black, $color-header, $color-black);
+}
+
+.dropdown-menu {
+    >li {
+        >a {
+            @include links($color-base, $color-base, $color-black, $color-base);
+        }
+    }
+}
+
+.okayNav {
+    li {
+        a {
+            @include links($color-base, $color-base, $color-header, $color-base);
+        }
+        &.active {
+            a {
+                @include links($color-header, $color-header, $color-header, $color-header);
+            }
+        }
+    }
+}
+
+.okayNav__menu-toggle {
+    span {
+        background-color: $color-black;
+    }
+}
+
+.okayNav__menu-toggle.icon--active span {
+    span {
+        background-color: $color-black;
+    }
+}
+
+.okayNav__nav--invisible {
+    background-color: $color-white;
+}

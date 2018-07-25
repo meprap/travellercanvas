@@ -1,0 +1,495 @@
+@import "variables/variables";
+
+@font-face {
+  font-family: 'pv-common';
+  src: url('#{$pvc-font-path}/pv-common.eot?uj9qzw');
+  src: url('#{$pvc-font-path}/pv-common.eot?uj9qzw#iefix') format('embedded-opentype'),
+  url('#{$pvc-font-path}/pv-common.ttf?uj9qzw') format('truetype'),
+  url('#{$pvc-font-path}/pv-common.woff?uj9qzw') format('woff'),
+  url('#{$pvc-font-path}/pv-common.svg?uj9qzw#modern') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="pvc-"],
+[class*=" pvc-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'pv-common' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pvc-play {
+  &:before {
+    content: $pvc-play;
+  }
+}
+
+.pvc-double-down {
+  &:before {
+    content: $pvc-double-down;
+  }
+}
+
+.pvc-double-up {
+  &:before {
+    content: $pvc-double-up;
+  }
+}
+
+.pvc-double-right {
+  &:before {
+    content: $pvc-double-right;
+  }
+}
+
+.pvc-double-left {
+  &:before {
+    content: $pvc-double-left;
+  }
+}
+
+.pvc-comments {
+  &:before {
+    content: $pvc-comments;
+  }
+}
+
+.pvc-calendar-2 {
+  &:before {
+    content: $pvc-calendar-2;
+  }
+}
+
+.pvc-map {
+  &:before {
+    content: $pvc-map;
+  }
+}
+
+.pvc-microphone {
+  &:before {
+    content: $pvc-microphone;
+  }
+}
+
+.pvc-user {
+  &:before {
+    content: $pvc-user;
+  }
+}
+
+.pvc-cart-2 {
+  &:before {
+    content: $pvc-cart-2;
+  }
+}
+
+.pvc-add-cart-2 {
+  &:before {
+    content: $pvc-add-cart-2;
+  }
+}
+
+.pvc-paypal {
+  &:before {
+    content: $pvc-paypal;
+  }
+}
+
+.pvc-tag-cancel {
+  &:before {
+    content: $pvc-tag-cancel;
+  }
+}
+
+.pvc-chat {
+  &:before {
+    content: $pvc-chat;
+  }
+}
+
+.pvc-calendar {
+  &:before {
+    content: $pvc-calendar;
+  }
+}
+
+.pvc-megaphone {
+  &:before {
+    content: $pvc-megaphone;
+  }
+}
+
+.pvc-mobile {
+  &:before {
+    content: $pvc-mobile;
+  }
+}
+
+.pvc-mail {
+  &:before {
+    content: $pvc-mail;
+  }
+}
+
+.pvc-close {
+  &:before {
+    content: $pvc-close;
+  }
+}
+
+.pvc-brand {
+  &:before {
+    content: $pvc-brand;
+  }
+}
+
+.pvc-google {
+  &:before {
+    content: $pvc-google;
+  }
+}
+
+.pvc-linkedin {
+  &:before {
+    content: $pvc-linkedin;
+  }
+}
+
+.pvc-linkedin-2 {
+  &:before {
+    content: $pvc-linkedin-2;
+  }
+}
+
+.pvc-soundcloud-3 {
+  &:before {
+    content: $pvc-soundcloud-3;
+  }
+}
+
+.pvc-soundcloud-2 {
+  &:before {
+    content: $pvc-soundcloud-2;
+  }
+}
+
+.pvc-vimeo-2 {
+  &:before {
+    content: $pvc-vimeo-2;
+  }
+}
+
+.pvc-vimeo {
+  &:before {
+    content: $pvc-vimeo;
+  }
+}
+
+.pvc-flickr {
+  &:before {
+    content: $pvc-flickr;
+  }
+}
+
+.pvc-flickr2 {
+  &:before {
+    content: $pvc-flickr2;
+  }
+}
+
+.pvc-tumblr-2 {
+  &:before {
+    content: $pvc-tumblr-2;
+  }
+}
+
+.pvc-tumblr {
+  &:before {
+    content: $pvc-tumblr;
+  }
+}
+
+.pvc-instagram-2 {
+  &:before {
+    content: $pvc-instagram-2;
+  }
+}
+
+.pvc-facebook-square {
+  &:before {
+    content: $pvc-facebook-square;
+  }
+}
+
+.pvc-facebook {
+  &:before {
+    content: $pvc-facebook;
+  }
+}
+
+.pvc-foursquare {
+  &:before {
+    content: $pvc-foursquare;
+  }
+}
+
+.pvc-soundcloud {
+  &:before {
+    content: $pvc-soundcloud;
+  }
+}
+
+.pvc-google-plus-2 {
+  &:before {
+    content: $pvc-google-plus-2;
+  }
+}
+
+.pvc-tripadvisor {
+  &:before {
+    content: $pvc-tripadvisor;
+  }
+}
+
+.pvc-yelp {
+  &:before {
+    content: $pvc-yelp;
+  }
+}
+
+.pvc-youtube {
+  &:before {
+    content: $pvc-youtube;
+  }
+}
+
+.pvc-youtube-2 {
+  &:before {
+    content: $pvc-youtube-2;
+  }
+}
+
+.pvc-youtube-3 {
+  &:before {
+    content: $pvc-youtube-3;
+  }
+}
+
+.pvc-instagram {
+  &:before {
+    content: $pvc-instagram;
+  }
+}
+
+.pvc-pinterest {
+  &:before {
+    content: $pvc-pinterest;
+  }
+}
+
+.pvc-pinterest-2 {
+  &:before {
+    content: $pvc-pinterest-2;
+  }
+}
+
+.pvc-twitter {
+  &:before {
+    content: $pvc-twitter;
+  }
+}
+
+.pvc-price-tag-2 {
+  &:before {
+    content: $pvc-price-tag-2;
+  }
+}
+
+.pvc-price-tag {
+  &:before {
+    content: $pvc-price-tag;
+  }
+}
+
+.pvc-add {
+  &:before {
+    content: $pvc-add;
+  }
+}
+
+.pvc-cash {
+  &:before {
+    content: $pvc-cash;
+  }
+}
+
+.pvc-contact {
+  &:before {
+    content: $pvc-contact;
+  }
+}
+
+.pvc-done {
+  &:before {
+    content: $pvc-done;
+  }
+}
+
+.pvc-orders {
+  &:before {
+    content: $pvc-orders;
+  }
+}
+
+.pvc-plus {
+  &:before {
+    content: $pvc-plus;
+  }
+}
+
+.pvc-settings {
+  &:before {
+    content: $pvc-settings;
+  }
+}
+
+.pvc-signout-2 {
+  &:before {
+    content: $pvc-signout-2;
+  }
+}
+
+.pvc-signout {
+  &:before {
+    content: $pvc-signout;
+  }
+}
+
+.pvc-stripe {
+  &:before {
+    content: $pvc-stripe;
+  }
+}
+
+.pvc-time {
+  &:before {
+    content: $pvc-time;
+  }
+}
+
+.pvc-phone {
+  &:before {
+    content: $pvc-phone;
+  }
+}
+
+.pvc-cart {
+  &:before {
+    content: $pvc-cart;
+  }
+}
+
+.pvc-add-cart {
+  &:before {
+    content: $pvc-add-cart;
+  }
+}
+
+.pvc-minus {
+  &:before {
+    content: $pvc-minus;
+  }
+}
+
+.pvc-translate {
+  &:before {
+    content: $pvc-translate;
+  }
+}
+
+.pvc-location {
+  &:before {
+    content: $pvc-location;
+  }
+}
+
+.pvc-cart-4 {
+  &:before {
+    content: $pvc-cart-4;
+  }
+}
+
+.pvc-phone2 {
+  &:before {
+    content: $pvc-phone2;
+  }
+}
+
+.pvc-cart-3 {
+  &:before {
+    content: $pvc-cart-3;
+  }
+}
+
+.pvc-hamburger {
+  &:before {
+    content: $pvc-hamburger;
+  }
+}
+
+.pvc-arrow-right {
+  &:before {
+    content: $pvc-arrow-right;
+  }
+}
+
+.pvc-arrow-left {
+  &:before {
+    content: $pvc-arrow-left;
+  }
+}
+
+.pvc-arrow-down {
+  &:before {
+    content: $pvc-arrow-down;
+  }
+}
+
+.pvc-arrow-up {
+  &:before {
+    content: $pvc-arrow-up;
+  }
+}
+
+.pvc-thin-down {
+  &:before {
+    content: $pvc-thin-down;
+  }
+}
+
+.pvc-thin-up {
+  &:before {
+    content: $pvc-thin-up;
+  }
+}
+
+.pvc-thin-right {
+  &:before {
+    content: $pvc-thin-right;
+  }
+}
+
+.pvc-thin-left {
+  &:before {
+    content: $pvc-thin-left;
+  }
+}

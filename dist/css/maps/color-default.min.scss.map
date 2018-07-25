@@ -1,1 +1,0 @@
-{"version":3,"sources":["color-default.scss"],"names":[],"mappings":"AAAA,+BAA+B;;AAE/B;;;;;;;IAOI,WAAW;CACd","file":"../color-default.min.scss","sourcesContent":["@import \"theme/colors/default\";\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nstrong {\n    color: red;\n}\n"]}

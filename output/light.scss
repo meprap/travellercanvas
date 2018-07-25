@@ -1,0 +1,15 @@
+@import "theme/skin/light/vars";
+
+body {
+    background: $color-body-bg;
+    color: $color-base;
+}
+
+.#{$global} {
+    &-header {
+        background-color: $color-header-bg;
+    }
+    &-footer-main {
+        background-color: $color-footer-bg;
+    }
+}

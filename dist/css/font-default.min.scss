@@ -1,9 +1,0 @@
-@import "./utilities/mixins";
-@import "./utilities/breakpoint";
-@import "./theme/fonts/default";
-
-body {
-    @include font($base-font, normal, 400);
-    @include rem(font-size, 15px);
-    line-height: 1.7;
-}

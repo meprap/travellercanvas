@@ -1,0 +1,196 @@
+.bg {
+    &-primary {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+    &-success {
+        background-color: $color-success;
+        color: $color-white;
+    }
+    &-info {
+        background-color: $color-info;
+        color: $color-white;
+    }
+    &-warning {
+        background-color: $color-warning;
+        color: $color-white;
+    }
+    &-danger {
+        background-color: $color-danger;
+        color: $color-white;
+    }
+}
+
+.text {
+    &-lg {
+        @include font-size(2);
+    }
+    &-md {
+        @include font-size(1.6);
+    }
+    &-sm {
+        @include font-size(1.4);
+    }
+    &-xs {
+        @include font-size(1.2);
+    }
+    &-primary {
+        color: $color-primary;
+    }
+    &-success {
+        color: $color-success;
+    }
+    &-info {
+        color: $color-info;
+    }
+    &-warning {
+        color: $color-warning;
+    }
+    &-danger {
+        color: $color-danger;
+    }
+}
+
+.d {
+    &-block {
+        display: block;
+    }
+    &-inline {
+        display: inline;
+    }
+    &-inline-block {
+        display: inline-block;
+    }
+}
+
+.align {
+    &-baseline {
+        vertical-align: baseline;
+    }
+    &-top {
+        vertical-align: top;
+    }
+    &-middle {
+        vertical-align: middle;
+    }
+    &-bottom {
+        vertical-align: bottom;
+    }
+    &-text-top {
+        vertical-align: text-top;
+    }
+    &-text-bottom {
+        vertical-align: text-bottom;
+    }
+}
+
+.label {
+    padding: 5px 8px;
+    font-weight: 500;
+    &-default {
+        background-color: $color-10;
+        color: $color-70;
+    }
+    &-primary {
+        background-color: $color-primary;
+    }
+    &-success {
+        background-color: $color-success;
+    }
+    &-info {
+        background-color: $color-info;
+    }
+    &-warning {
+        background-color: $color-warning;
+    }
+    &-danger {
+        background-color: $color-danger;
+    }
+}
+
+.truncate {
+    &--1-line {
+        @include ellipsis(20px, 1);
+    }
+    &--2-line {
+        @include ellipsis(50px, 2);
+    }
+    &--3-line {
+        @include ellipsis(70px, 3);
+    }
+}
+
+.icon-holder {
+    line-height: 1;
+    position: relative;
+    &--lg {
+        width: 75px;
+        height: 75px;
+        @include font-size(2.5);
+    }
+    &--md {
+        width: 50px;
+        height: 50px;
+        @include font-size(2);
+    }
+    &--sm {
+        width: 35px;
+        height: 35px;
+        @include font-size(1.5);
+    }
+    i {
+        @include centerer(true, true);
+    }
+}
+
+.rounded {
+    @include border-radius(4px);
+    &-top {
+        @include border-radius(4px 4px 0 0);
+    }
+    &-right {
+        @include border-radius(4px 0 0 4px);
+    }
+    &-bottom {
+        @include border-radius(0 0 4px 4px);
+    }
+    &-left {
+        @include border-radius(0 4px 4px 0);
+    }
+    &-circle {
+        @include border-radius(100%);
+    }
+    &-0 {
+        @include border-radius(0);
+    }
+} 
+
+// Grid no Gutters [Bootstrap]
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    &>[class^="col-"],
+    &>[class*=" col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+} 
+
+// Coverting BS grid to Table
+.row--table {
+    @include vertical-center-tbl(100%);
+    @include breakpoint(sm) {
+        display: block;
+        >* {
+            width: 100%;
+            display: block;
+        }
+    }
+    @include breakpoint(xs) {
+        display: block;
+        >* {
+            width: 100%;
+            display: block;
+        }
+    }
+}

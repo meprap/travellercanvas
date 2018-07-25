@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "mePraP",
+  "author": "Sanjay Shrestha",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.18.12",

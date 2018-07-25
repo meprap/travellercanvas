@@ -1,0 +1,134 @@
+.btn {
+    @include font($header-font, normal, 500);
+    margin: 5px 0;
+    padding: 10px 20px;
+    @include transition;
+    @include border-radius(4px);
+    i {
+        vertical-align: middle;
+    }
+    &--xl {
+        @include font-size(2.2);
+        padding: 15px 40px;
+    }
+    &--lg {
+        @include font-size(2);
+        padding: 10px 35px;
+    }
+    &--md {
+        @include font-size(1.8);
+        padding: 7px 30px;
+    }
+    &--sm {
+        @include font-size(1.6);
+        padding: 6px 25px;
+    }
+    &--xs {
+        @include font-size(1.2);
+        padding: 6px 20px;
+    }
+    &-light {
+        background-color: $color-10;
+        border: 1px solid;
+        border-color: $color-10;
+        color: $color-70;
+        &:hover,
+        &:focus {
+            background-color: $color-50;
+            border-color: $color-50;
+            color: $color-white;
+        }
+    }
+    &-semi-light {
+        background-color: $color-30;
+        border: 1px solid;
+        border-color: $color-30;
+        color: $color-90;
+        &:hover,
+        &:focus {
+            background-color: $color-70;
+            border-color: $color-70;
+            color: $color-white;
+        }
+    }
+    &-dark {
+        background-color: $color-70;
+        border: 1px solid;
+        border-color: $color-70;
+        color: $color-white;
+        &:hover,
+        &:focus {
+            background-color: $color-90;
+            border-color: $color-90;
+            color: $color-white;
+        }
+    }
+    &-default {
+        background-color: $color-white;
+        border: 1px solid;
+        border-color: $color-10;
+        &:hover,
+        &:focus {
+            background-color: $color-20;
+            border-color: $color-20;
+        }
+    }
+    &-primary {
+        background-color: $color-primary;
+        border: 1px solid;
+        border-color: $color-primary;
+        &:hover,
+        &:focus {
+            background-color: darken($color-primary, 10%);
+            border-color: darken($color-primary, 10%);
+        }
+    }
+    &-success {
+        background-color: $color-success;
+        border: 1px solid;
+        border-color: $color-success;
+        &:hover,
+        &:focus {
+            background-color: darken($color-success, 10%);
+            border-color: darken($color-success, 10%);
+        }
+    }
+    &-info {
+        background-color: $color-info;
+        border: 1px solid;
+        border-color: $color-info;
+        &:hover,
+        &:focus {
+            background-color: darken($color-info, 10%);
+            border-color: darken($color-info, 10%);
+        }
+    }
+    &-warning {
+        background-color: $color-warning;
+        border: 1px solid;
+        border-color: $color-warning;
+        &:hover,
+        &:focus {
+            background-color: darken($color-warning, 10%);
+            border-color: darken($color-warning, 10%);
+        }
+    }
+    &-danger {
+        background-color: $color-danger;
+        border: 1px solid;
+        border-color: $color-danger;
+        &:hover,
+        &:focus {
+            background-color: darken($color-danger, 10%);
+            border-color: darken($color-danger, 10%);
+        }
+    }
+}
+
+a,
+button,
+.btn {
+    &:focus {
+        outline: none;
+    }
+}

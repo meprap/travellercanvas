@@ -1,0 +1,102 @@
+.btn-group {
+    &--header {
+        @include centerer(false, true);
+        right: 30px;
+        @include breakpoint(xs) {
+            transform: translate(0, 0);
+            position: relative;
+            top: auto;
+            right: auto;
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: right;
+        }
+        button {
+            background-color: transparent;
+            border: none;
+            margin-left: 10px;
+            @include opacity(.3);
+            @include transition(all, .4s, ease);
+            &:hover {
+                @include opacity(1);
+            }
+        }
+        i {
+            @include font-size(2);
+        }
+    }
+}
+
+.form-control {
+    height: auto;
+    border-color: $color-border;
+    color: $color-70;
+    padding: 10px 15px;
+    @include box-shadow(0 0 0);
+    &:focus {
+        border-color: $color-30;
+        @include box-shadow(0 0 0);
+    }
+    &--xs {
+        padding: 5px 7px;
+    }
+    &--50 {
+        width: 50%;
+    }
+    &--75 {
+        width: 75%;
+    }
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-group-addon {
+    background-color: transparent;
+    border: 1px solid $color-border;
+    padding: 0;
+    .quantity-right-plus,
+    .quantity-left-minus {
+        border: none;
+        background-color: transparent;
+        color: $color-30;
+        @include transition;
+        &:hover {
+            color: $color-70;
+        }
+    }
+    .quantity-left-minus {
+        padding: 10px 0 10px 15px;
+    }
+    .quantity-right-plus {
+        padding: 10px 15px 10px 0;
+    }
+}
+
+.input-number {
+    border-left: transparent;
+    border-right: transparent;
+    width: 50px !important;
+    padding: 10px;
+    text-align: center;
+    @include font-size(1.6);
+    font-weight: 500;
+    &:focus {
+        border-top: 1px solid $color-border;
+        border-bottom: 1px solid $color-border;
+    }
+}
+
+.error {
+    border-color: $color-danger;
+}
+
+label {
+    &.error {
+        color: $color-danger;
+        font-weight: 400;
+        @include font-size(1.1);
+        @include position(absolute, $bottom: -23px, $left: auto);
+    }
+}

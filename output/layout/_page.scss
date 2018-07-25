@@ -1,0 +1,46 @@
+.#{$global} {
+    &-wrap {
+        width: 100%;
+        position: relative;
+        &--full-height {
+            height: 100%;
+        }
+        &--auto-height {
+            height: auto;
+            min-height: 100%;
+        }
+        &__left {
+            width: calc(100% - 50%);
+            height: 100%;
+        }
+        &__right {
+            background: red;
+            width: 50%;
+            height: 100%;
+            position: fixed;
+            top: auto;
+            right: 0;
+        }
+    }
+    &-main {
+        position: relative;
+        &--content {
+            border-width: 1px;
+            border-style: solid;
+        }
+    }
+    &-section {
+        padding: 100px 0;
+    }
+    &-banner {
+        padding-left: 15px;
+        padding-right: 15px;
+        @media(max-width: $screen-xs-max) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    &-map {
+        height: 350px;
+    }
+}

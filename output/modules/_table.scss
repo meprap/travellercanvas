@@ -1,0 +1,114 @@
+.table {
+    &-responsive-custom {
+        table {
+            @include breakpoint(xs) {
+                border: 0;
+            }
+        }
+        thead {
+            @include font-size(1.6);
+            color: $color-50;
+            >tr {
+                >th {
+                    padding: 15px 8px;
+                    &:first-child {
+                        text-align: left;
+                        padding-left: 0;
+                        @include breakpoint(xs) {
+                            padding-left: 20px;
+                        }
+                    }
+                    &:last-child {
+                        text-align: right;
+                    }
+                }
+            }
+            @include breakpoint(xs) {
+                border: none;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                margin: -1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 1px;
+            }
+        }
+        tbody {
+            >tr {
+                >td {
+                    padding: 25px 8px;
+                    vertical-align: middle;
+                    @include breakpoint(xs) {
+                        padding: 20px;
+                    }
+                    &:first-child {
+                        text-align: left;
+                        padding-left: 0;
+                        @include breakpoint(xs) {
+                            padding-left: 20px;
+                        }
+                    }
+                    &:last-child {
+                        text-align: right;
+                        @include breakpoint(xs) {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+        th {
+            font-weight: 500;
+        }
+        tr {
+            @include breakpoint(xs) {
+                border-left: 1px solid $color-border;
+                border-right: 1px solid $color-border;
+                display: block;
+                margin-bottom: 30px;
+            }
+        }
+        td {
+            @include breakpoint(xs) {
+                display: block;
+                &:before {
+                    content: attr(data-label);
+                    width: auto;
+                    float: none;
+                    @include font-size(1.5);
+                    font-weight: 500;
+                    color: $color-50;
+                    margin-right: 15px;
+                    margin-bottom: 15px;
+                    @include ellipsis(20px, 1);
+                }
+                &:last-child {
+                    border-bottom: 1px solid $color-border;
+                }
+            }
+        }
+    }
+    &--borderless {
+        >tbody>tr {
+            @include breakpoint(xs) {
+                border: none !important;
+                margin-bottom: 10px !important;
+            }
+        }
+        >tbody>tr>td,
+        >tbody>tr>th,
+        >tfoot>tr>td,
+        >tfoot>tr>th,
+        >thead>tr>td,
+        >thead>tr>th {
+            border: none !important;
+        }
+        >tbody>tr>td {
+            padding: 10px 0 !important;
+            @include breakpoint(xs) {
+                padding: 3px 0 !important;
+            }
+        }
+    }
+}

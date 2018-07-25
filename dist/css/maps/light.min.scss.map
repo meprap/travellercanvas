@@ -1,1 +1,0 @@
-{"version":3,"sources":["light.scss"],"names":[],"mappings":"AAAA,gCAAgC;;AAEhC;IACI,2BAA2B;CAC9B","file":"../light.min.scss","sourcesContent":["@import \"theme/skin/light/vars\";\n\nbody {\n    background: $color-body-bg;\n}\n"]}

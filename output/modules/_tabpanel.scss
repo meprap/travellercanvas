@@ -1,0 +1,213 @@
+.tabs {
+    &--default {
+        .nav-tabs {
+            border-color: $color-border;
+            >li {
+                float: none;
+                display: block;
+                &.active {
+                    >a {
+                        border: none;
+                        border-bottom: 1px solid $color-80;
+                        &:hover {
+                            border-bottom: 1px solid $color-80;
+                        }
+                    }
+                }
+                >a {
+                    border: none;
+                    border-bottom: 1px solid $color-border;
+                    font-weight: 500;
+                    @include font-size(1.8);
+                    margin: 0;
+                    padding: 15px 30px;
+                    @include breakpoint(sm) {
+                        @include font-size(1.6);
+                    }
+                    @include breakpoint(xs) {
+                        @include font-size(1.5);
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    i {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 10px;
+                        @include breakpoint(xs) {
+                            margin-right: 4px;
+                        }
+                    }
+                    &:hover,
+                    &:focus {
+                        background-color: transparent;
+                    }
+                    &:hover {
+                        border: none;
+                        border-bottom: 1px solid transparent;
+                        color: $color-80;
+                    }
+                }
+            }
+        }
+    }
+    &--media {
+        .nav-tabs {
+            border-color: $color-border;
+            >li {
+                float: none;
+                display: inline-block;
+                vertical-align: middle;
+                @include font-size(0);
+                &.active {
+                    >a {
+                        border: none;
+                        border-bottom: 1px solid $color-80;
+                        &:hover {
+                            border-bottom: 1px solid $color-80;
+                        }
+                    }
+                }
+                >a {
+                    border: none;
+                    border-bottom: 1px solid $color-border;
+                    font-weight: 500;
+                    @include font-size(1.8);
+                    margin: 0;
+                    padding: 15px 30px;
+                    @include breakpoint(sm) {
+                        @include font-size(1.6);
+                    }
+                    @include breakpoint(xs) {
+                        @include font-size(1.5);
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    i {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 10px;
+                        @include breakpoint(xs) {
+                            margin-right: 4px;
+                        }
+                    }
+                    &:hover,
+                    &:focus {
+                        background-color: transparent;
+                    }
+                    &:hover {
+                        border: none;
+                        border-bottom: 1px solid transparent;
+                        color: $color-80;
+                    }
+                }
+            }
+        }
+    }
+    // Delete the below codes
+    &--design {
+        &-2 {
+            .nav-tabs {
+                border-color: $color-border;
+                >li {
+                    float: none;
+                    display: inline-block;
+                    vertical-align: middle;
+                    @include font-size(0);
+                    &.active {
+                        >a {
+                            border: none;
+                            border-bottom: 1px solid $color-80;
+                            &:hover {
+                                border-bottom: 1px solid $color-80;
+                            }
+                        }
+                    }
+                    >a {
+                        border: none;
+                        border-bottom: 1px solid $color-border;
+                        font-weight: 500;
+                        @include font-size(1.8);
+                        margin: 0;
+                        padding: 15px 30px;
+                        @include breakpoint(sm) {
+                            @include font-size(1.6);
+                        }
+                        @include breakpoint(xs) {
+                            @include font-size(1.5);
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+                        i {
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 10px;
+                            @include breakpoint(xs) {
+                                margin-right: 4px;
+                            }
+                        }
+                        &:hover,
+                        &:focus {
+                            background-color: transparent;
+                        }
+                        &:hover {
+                            border: none;
+                            border-bottom: 1px solid transparent;
+                            color: $color-80;
+                        }
+                    }
+                }
+            }
+            .tab-pane {
+                padding: 30px 0 0;
+                overflow: hidden;
+            }
+        }
+    }
+    &--vertical {
+        .nav-tabs {
+            border: none;
+            >li {
+                float: none;
+                display: block;
+                margin-bottom: 1px;
+                &.active {
+                    >a {
+                        border: none;
+                        border-bottom: 1px solid transparent;
+                        border-left: 6px solid $color-70;
+                        &:hover {
+                            border-bottom: 1px solid transparent;
+                            border-left: 6px solid $color-70;
+                        }
+                    }
+                }
+                >a {
+                    border: none;
+                    border-bottom: 1px solid $color-border;
+                    border-left: 1px solid $color-20;
+                    background-color: black(.05);
+                    font-weight: 500;
+                    @include font-size(1.5);
+                    margin: 0;
+                    padding: 10px 20px;
+                    @include border-radius(0);
+                    i {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 10px;
+                    }
+                    &:hover,
+                    &:focus {
+                        background-color: black(.05);
+                    }
+                    &:hover {
+                        border: none;
+                        border-bottom: 1px solid transparent;
+                        border-left: 6px solid $color-30;
+                        color: $color-80;
+                    }
+                }
+            }
+        }
+    }
+}
