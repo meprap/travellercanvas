@@ -19,43 +19,7 @@
 
 <body>
 
-    <header class="theme-header theme-header--demo">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a href="index.html" class="navbar-brand">
-                        EZ Design
-                        <small>[Front End Components]</small>
-                    </a>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Action</a>
-                            </li>
-                            <li>
-                                <a href="#">Another action</a>
-                            </li>
-                            <li>
-                                <a href="#">Something else here</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                                <a href="#">Separated link</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    @@include('includes/header.html')
 
     <main class="theme-main theme-main--demo">
         <div class="container-fluid">
@@ -424,15 +388,7 @@
         <div class="push"></div>
     </main>
 
-    <footer class="theme-footer theme-footer--demo">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12">
-                    This is Footer
-                </div>
-            </div>
-        </div>
-    </footer>
+    @@include('includes/footer.html')
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
