@@ -1,0 +1,1 @@
+{"version":3,"sources":["dark.scss"],"names":[],"mappings":"AAAA,+BAA+B;;AAE/B;IACI,2BAA2B;CAC9B","file":"../dark.min.scss","sourcesContent":["@import \"theme/skin/dark/vars\";\n\nbody {\n    background: $color-body-bg;\n}\n"]}
