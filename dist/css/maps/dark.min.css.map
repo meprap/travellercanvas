@@ -1,0 +1,1 @@
+{"version":3,"sources":["dark.scss","base/_branding.scss"],"names":[],"mappings":"AAEA,KACI,eCFe,CDGlB","file":"../dark.min.css","sourcesContent":["@import \"theme/skin/dark/vars\";\n\nbody {\n    background: $color-body-bg;\n}\n","// Color Variables\n$color-white: \t#fff;\n$color-black: \t#000;"]}

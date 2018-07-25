@@ -1,0 +1,38 @@
+@import 'vendors/animate/animate',
+        'vendors/bootstrap/bootstrap',
+        'vendors/pvt-icons/pvc-icons';
+
+@import "base/branding";
+        
+@import "utilities/path",
+        "utilities/functions",
+        "utilities/vars",
+        "utilities/mixins",
+        "utilities/breakpoint",
+        "utilities/placeholders",
+        "utilities/gutter",
+        "utilities/helper";
+
+@import "base/units",
+        "base/typo",
+        "base/config";
+
+@import 'modules/navbar',
+        'modules/button',
+        'modules/alert',
+        'modules/hr',
+        'modules/forms',
+        'modules/nano',
+        'modules/dropdown',
+        'modules/loader',
+        'modules/table',
+        'modules/tabpanel',
+        'modules/modal',
+        'modules/or',
+        'modules/media',
+        'modules/panel';
+
+@import "layout/header",
+        "layout/footer",
+        "layout/main",
+        "layout/ecommerce";

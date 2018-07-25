@@ -1,0 +1,9 @@
+.#{$global} {
+    &-footer {
+        padding: 20px 15px;
+        &--demo {
+            background-color: $color-90;
+            color: $color-50;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.dropdown {
+    &--wrap {
+        border: 1px solid $color-10;
+        padding: 10px 15px;
+    }
+    &-menu {
+        border: 1px solid $color-10;
+        min-width: 175px;
+        &>li {
+            &>a {
+                padding: 8px 15px;
+            }
+        }
+    }
+}

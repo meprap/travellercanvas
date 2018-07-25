@@ -1,0 +1,11 @@
+.panel {
+    border-color: $color-border;
+    margin-bottom: 30px;
+    @include box-shadow(0 0 0);
+    @include last-child() {
+        margin-bottom: 0;
+    }
+    &-body {
+        padding: 30px;
+    }
+}
