@@ -44,7 +44,6 @@ h6 {
 }
 
 a {
-    @include links($color-link, $color-visited, $color-link-hover, $color-active);
     @include transition(all, .5s, ease);
     &:hover {
         text-decoration: none;

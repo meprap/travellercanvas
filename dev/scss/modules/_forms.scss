@@ -29,12 +29,9 @@
 
 .form-control {
     height: auto;
-    border-color: $color-border;
-    color: $color-70;
     padding: 10px 15px;
     @include box-shadow(0 0 0);
     &:focus {
-        border-color: $color-30;
         @include box-shadow(0 0 0);
     }
     &--xs {
@@ -54,17 +51,12 @@
 
 .input-group-addon {
     background-color: transparent;
-    border: 1px solid $color-border;
     padding: 0;
     .quantity-right-plus,
     .quantity-left-minus {
         border: none;
         background-color: transparent;
-        color: $color-30;
         @include transition;
-        &:hover {
-            color: $color-70;
-        }
     }
     .quantity-left-minus {
         padding: 10px 0 10px 15px;
@@ -82,19 +74,10 @@
     text-align: center;
     @include font-size(1.6);
     font-weight: 500;
-    &:focus {
-        border-top: 1px solid $color-border;
-        border-bottom: 1px solid $color-border;
-    }
-}
-
-.error {
-    border-color: $color-danger;
 }
 
 label {
     &.error {
-        color: $color-danger;
         font-weight: 400;
         @include font-size(1.1);
         @include position(absolute, $bottom: -23px, $left: auto);

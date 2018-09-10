@@ -1,22 +1,16 @@
 .tabs {
     &--default {
         .nav-tabs {
-            border-color: $color-border;
             >li {
                 float: none;
                 display: block;
                 &.active {
                     >a {
                         border: none;
-                        border-bottom: 1px solid $color-80;
-                        &:hover {
-                            border-bottom: 1px solid $color-80;
-                        }
                     }
                 }
                 >a {
                     border: none;
-                    border-bottom: 1px solid $color-border;
                     font-weight: 500;
                     @include font-size(1.8);
                     margin: 0;
@@ -44,7 +38,6 @@
                     &:hover {
                         border: none;
                         border-bottom: 1px solid transparent;
-                        color: $color-80;
                     }
                 }
             }
@@ -52,7 +45,6 @@
     }
     &--media {
         .nav-tabs {
-            border-color: $color-border;
             >li {
                 float: none;
                 display: inline-block;
@@ -61,15 +53,10 @@
                 &.active {
                     >a {
                         border: none;
-                        border-bottom: 1px solid $color-80;
-                        &:hover {
-                            border-bottom: 1px solid $color-80;
-                        }
                     }
                 }
                 >a {
                     border: none;
-                    border-bottom: 1px solid $color-border;
                     font-weight: 500;
                     @include font-size(1.8);
                     margin: 0;
@@ -97,7 +84,6 @@
                     &:hover {
                         border: none;
                         border-bottom: 1px solid transparent;
-                        color: $color-80;
                     }
                 }
             }
@@ -107,7 +93,6 @@
     &--design {
         &-2 {
             .nav-tabs {
-                border-color: $color-border;
                 >li {
                     float: none;
                     display: inline-block;
@@ -116,15 +101,10 @@
                     &.active {
                         >a {
                             border: none;
-                            border-bottom: 1px solid $color-80;
-                            &:hover {
-                                border-bottom: 1px solid $color-80;
-                            }
                         }
                     }
                     >a {
                         border: none;
-                        border-bottom: 1px solid $color-border;
                         font-weight: 500;
                         @include font-size(1.8);
                         margin: 0;
@@ -152,7 +132,6 @@
                         &:hover {
                             border: none;
                             border-bottom: 1px solid transparent;
-                            color: $color-80;
                         }
                     }
                 }
@@ -174,18 +153,13 @@
                     >a {
                         border: none;
                         border-bottom: 1px solid transparent;
-                        border-left: 6px solid $color-70;
                         &:hover {
                             border-bottom: 1px solid transparent;
-                            border-left: 6px solid $color-70;
                         }
                     }
                 }
                 >a {
                     border: none;
-                    border-bottom: 1px solid $color-border;
-                    border-left: 1px solid $color-20;
-                    background-color: black(.05);
                     font-weight: 500;
                     @include font-size(1.5);
                     margin: 0;
@@ -196,15 +170,9 @@
                         vertical-align: middle;
                         margin-right: 10px;
                     }
-                    &:hover,
-                    &:focus {
-                        background-color: black(.05);
-                    }
                     &:hover {
                         border: none;
                         border-bottom: 1px solid transparent;
-                        border-left: 6px solid $color-30;
-                        color: $color-80;
                     }
                 }
             }

@@ -1,11 +1,533 @@
-@import "theme/colors/default";
+@import 'base/functions',
+        'base/global-vars',
+        'theme/colors/base/mixins',
+        'theme/colors/default/vars',
+        'utilities/breakpoint';
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong {
-    color: red;
+
+// Global
+a {
+    @include links($color-link, $color-visited, $color-link-hover, $color-active);
+}
+
+
+// Helpers
+.bg {
+    &-primary {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+
+    &-success {
+        background-color: $color-success;
+        color: $color-white;
+    }
+
+    &-info {
+        background-color: $color-info;
+        color: $color-white;
+    }
+
+    &-warning {
+        background-color: $color-warning;
+        color: $color-white;
+    }
+
+    &-danger {
+        background-color: $color-danger;
+        color: $color-white;
+    }
+}
+
+.text {
+    &-primary {
+        color: $color-primary;
+    }
+
+    &-success {
+        color: $color-success;
+    }
+
+    &-info {
+        color: $color-info;
+    }
+
+    &-warning {
+        color: $color-warning;
+    }
+
+    &-danger {
+        color: $color-danger;
+    }
+}
+
+.label {
+    &-default {
+        background-color: $color-10;
+        color: $color-70;
+    }
+
+    &-primary {
+        background-color: $color-primary;
+    }
+
+    &-success {
+        background-color: $color-success;
+    }
+
+    &-info {
+        background-color: $color-info;
+    }
+
+    &-warning {
+        background-color: $color-warning;
+    }
+
+    &-danger {
+        background-color: $color-danger;
+    }
+}
+
+
+// Buttons
+.btn {
+    &-light {
+        background-color: $color-10;
+        border-color: $color-10;
+        color: $color-70;
+
+        &:hover,
+        &:focus {
+            background-color: $color-50;
+            border-color: $color-50;
+            color: $color-white;
+        }
+    }
+
+    &-semi-light {
+        background-color: $color-30;
+        border-color: $color-30;
+        color: $color-90;
+
+        &:hover,
+        &:focus {
+            background-color: $color-70;
+            border-color: $color-70;
+            color: $color-white;
+        }
+    }
+
+    &-dark {
+        background-color: $color-70;
+        border-color: $color-70;
+        color: $color-white;
+
+        &:hover,
+        &:focus {
+            background-color: $color-90;
+            border-color: $color-90;
+            color: $color-white;
+        }
+    }
+
+    &-default {
+        background-color: $color-white;
+        border-color: $color-10;
+
+        &:hover,
+        &:focus {
+            background-color: $color-20;
+            border-color: $color-20;
+        }
+    }
+
+    &-primary {
+        background-color: $color-primary;
+        border-color: $color-primary;
+
+        &:hover,
+        &:focus {
+            background-color: darken($color-primary, 10%);
+            border-color: darken($color-primary, 10%);
+        }
+    }
+
+    &-success {
+        background-color: $color-success;
+        border-color: $color-success;
+
+        &:hover,
+        &:focus {
+            background-color: darken($color-success, 10%);
+            border-color: darken($color-success, 10%);
+        }
+    }
+
+    &-info {
+        background-color: $color-info;
+        border-color: $color-info;
+
+        &:hover,
+        &:focus {
+            background-color: darken($color-info, 10%);
+            border-color: darken($color-info, 10%);
+        }
+    }
+
+    &-warning {
+        background-color: $color-warning;
+        border-color: $color-warning;
+
+        &:hover,
+        &:focus {
+            background-color: darken($color-warning, 10%);
+            border-color: darken($color-warning, 10%);
+        }
+    }
+
+    &-danger {
+        background-color: $color-danger;
+        border-color: $color-danger;
+
+        &:hover,
+        &:focus {
+            background-color: darken($color-danger, 10%);
+            border-color: darken($color-danger, 10%);
+        }
+    }
+}
+
+
+// Navbar
+.navbar {
+    &-default {
+        background-color: $color-90;
+    }
+}
+
+
+// Alert
+.alert {
+    &-success {
+        .close {
+            color: darken($color-success, 25%);
+
+            &:hover {
+                color: darken($color-success, 50%);
+            }
+        }
+    }
+
+    &-info {
+        .close {
+            color: darken($color-info, 25%);
+
+            &:hover {
+                color: darken($color-info, 50%);
+            }
+        }
+    }
+
+    &-warning {
+        .close {
+            color: darken($color-warning, 25%);
+
+            &:hover {
+                color: darken($color-warning, 50%);
+            }
+        }
+    }
+
+    &-danger {
+        .close {
+            color: darken($color-danger, 25%);
+
+            &:hover {
+                color: darken($color-danger, 50%);
+            }
+        }
+    }
+}
+
+
+// HR Seprator
+.hr {
+    &--option-1 {
+        border-color: $color-10;
+    }
+}
+
+
+// Forms
+.form-control {
+    border-color: $color-border;
+    color: $color-70;
+
+    &:focus {
+        border-color: $color-30;
+    }
+}
+
+.input-group-addon {
+    border: 1px solid $color-border;
+
+    .quantity-right-plus,
+    .quantity-left-minus {
+        color: $color-30;
+
+        &:hover {
+            color: $color-70;
+        }
+    }
+}
+
+.input-number {
+    &:focus {
+        border-top: 1px solid $color-border;
+        border-bottom: 1px solid $color-border;
+    }
+}
+
+.error {
+    border-color: $color-danger;
+}
+
+label {
+    &.error {
+        color: $color-danger;
+    }
+}
+
+
+// Dropdowns
+.dropdown {
+    &--wrap {
+        border-color: $color-10;
+    }
+
+    &-menu {
+        border-color: $color-10;
+    }
+}
+
+
+// Table
+.table {
+    &-responsive-custom {
+        thead {
+            color: $color-50;
+        }
+
+        tr {
+            @include breakpoint(xs) {
+                border-left: 1px solid $color-border;
+                border-right: 1px solid $color-border;
+            }
+        }
+
+        td {
+            @include breakpoint(xs) {
+                &:last-child {
+                    border-bottom: 1px solid $color-border;
+                }
+            }
+        }
+    }
+}
+
+
+// Tabs
+.tabs {
+    &--default {
+        .nav-tabs {
+            border-color: $color-border;
+
+            >li {
+                &.active {
+                    >a {
+                        border-bottom: 1px solid $color-80;
+
+                        &:hover {
+                            border-bottom: 1px solid $color-80;
+                        }
+                    }
+                }
+
+                >a {
+                    border-bottom: 1px solid $color-border;
+
+                    &:hover,
+                    &:focus {
+                        background-color: transparent;
+                    }
+
+                    &:hover {
+                        border-bottom: 1px solid transparent;
+                        color: $color-80;
+                    }
+                }
+            }
+        }
+    }
+
+    &--media {
+        .nav-tabs {
+            border-color: $color-border;
+
+            >li {
+                &.active {
+                    >a {
+                        border-bottom: 1px solid $color-80;
+
+                        &:hover {
+                            border-bottom: 1px solid $color-80;
+                        }
+                    }
+                }
+
+                >a {
+                    border-bottom: 1px solid $color-border;
+
+                    &:hover,
+                    &:focus {
+                        background-color: transparent;
+                    }
+
+                    &:hover {
+                        border-bottom: 1px solid transparent;
+                        color: $color-80;
+                    }
+                }
+            }
+        }
+    }
+
+    // Delete the below codes
+    &--design {
+        &-2 {
+            .nav-tabs {
+                border-color: $color-border;
+
+                >li {
+                    &.active {
+                        >a {
+                            border-bottom: 1px solid $color-80;
+
+                            &:hover {
+                                border-bottom: 1px solid $color-80;
+                            }
+                        }
+                    }
+
+                    >a {
+                        border-bottom: 1px solid $color-border;
+
+                        &:hover,
+                        &:focus {
+                            background-color: transparent;
+                        }
+
+                        &:hover {
+                            border-bottom: 1px solid transparent;
+                            color: $color-80;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &--vertical {
+        .nav-tabs {
+            >li {
+                &.active {
+                    >a {
+                        border-bottom: 1px solid transparent;
+                        border-left: 6px solid $color-70;
+
+                        &:hover {
+                            border-bottom: 1px solid transparent;
+                            border-left: 6px solid $color-70;
+                        }
+                    }
+                }
+
+                >a {
+                    border-bottom: 1px solid $color-border;
+                    border-left: 1px solid $color-20;
+                    background-color: black(.05);
+
+                    &:hover,
+                    &:focus {
+                        background-color: black(.05);
+                    }
+
+                    &:hover {
+                        border-bottom: 1px solid transparent;
+                        border-left: 6px solid $color-30;
+                        color: $color-80;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Seprators
+.or {
+    &:after {
+        background-color: $color-10;
+    }
+
+    &--plain-horizontal {
+        span {
+            background-color: $color-white;
+            color: $color-20;
+        }
+    }
+
+    &--rounded-horizontal {
+        span {
+            background-color: $color-10;
+            color: $color-90;
+        }
+    }
+}
+
+
+// Media
+.media {
+    &-left {
+        .img-link {
+            border: 1px solid $color-border;
+
+            &:hover {
+                border: 1px solid $color-70;
+            }
+        }
+    }
+}
+
+
+// Panels
+.panel {
+    border-color: $color-border;
+}
+
+
+// Pages
+.#{$global} {
+    &-header {
+        &--demo {
+            color: $color-50;
+        }
+    }
+
+    &-footer {
+        &--demo {
+            background-color: $color-90;
+            color: $color-50;
+        }
+    }
 }

@@ -1,3 +1,5 @@
+$global: 'theme';
+
 // Color Variables
 $color-white : #fff;
 $color-black : #000;
@@ -13,8 +15,9 @@ $color-70: darken($color-white, 70%); // #4d4d4d
 $color-80: darken($color-white, 80%); // #333333
 $color-90: darken($color-white, 90%); // #1a1a1a
 
-// Brand Color
-$color-brand: $color-90;
+// Brand Colors
+$color-brand: red;
+$color-brand-secondary: green;
 
 // Bootstrap Color
 $color-primary : #3498DB !default;

@@ -1,0 +1,28 @@
+// Links Mixin
+// eg: @include links($color-link, $color-link, $color-link-hover, $color-link);
+@mixin links($link, $visited, $hover, $active) {
+    & {
+        color: $link;
+        &:visited {
+            color: $visited;
+        }
+        &:hover {
+            color: $hover;
+            text-decoration: none;
+        }
+        &:active,
+        &:focus {
+            color: $active;
+            text-decoration: none;
+        }
+    }
+}
+
+// User Select
+/* eg: @include user-select(none); */
+@mixin user-select($user-select) {
+    -webkit-user-select: ($user-select);
+    -moz-user-select: ($user-select);
+    -ms-user-select: ($user-select);
+    user-select: ($user-select);
+}

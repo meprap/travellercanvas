@@ -7,7 +7,6 @@
         }
         thead {
             @include font-size(1.6);
-            color: $color-50;
             >tr {
                 >th {
                     padding: 15px 8px;
@@ -63,8 +62,6 @@
         }
         tr {
             @include breakpoint(xs) {
-                border-left: 1px solid $color-border;
-                border-right: 1px solid $color-border;
                 display: block;
                 margin-bottom: 30px;
             }
@@ -78,13 +75,9 @@
                     float: none;
                     @include font-size(1.5);
                     font-weight: 500;
-                    color: $color-50;
                     margin-right: 15px;
                     margin-bottom: 15px;
                     @include ellipsis(20px, 1);
-                }
-                &:last-child {
-                    border-bottom: 1px solid $color-border;
                 }
             }
         }

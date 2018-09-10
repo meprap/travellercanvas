@@ -1220,84 +1220,12 @@ button.list-group-item-danger.active.pseudo-class-focus {
   filter: alpha(opacity=90);
 }
 
-a.pseudo-class-visited {
-  color: gray;
-}
-
-a.pseudo-class-hover {
-  color: #1a1a1a;
-  text-decoration: none;
-}
-
-a.pseudo-class-active,
-a.pseudo-class-focus {
-  color: gray;
-  text-decoration: none;
-}
-
 a.pseudo-class-hover {
   text-decoration: none;
 }
 
 p.pseudo-class-last-of-type {
   margin-bottom: 0;
-}
-
-.btn-light.pseudo-class-hover,
-.btn-light.pseudo-class-focus {
-  background-color: gray;
-  border-color: gray;
-  color: #fff;
-}
-
-.btn-semi-light.pseudo-class-hover,
-.btn-semi-light.pseudo-class-focus {
-  background-color: #4d4d4d;
-  border-color: #4d4d4d;
-  color: #fff;
-}
-
-.btn-dark.pseudo-class-hover,
-.btn-dark.pseudo-class-focus {
-  background-color: #1a1a1a;
-  border-color: #1a1a1a;
-  color: #fff;
-}
-
-.btn-default.pseudo-class-hover,
-.btn-default.pseudo-class-focus {
-  background-color: #ccc;
-  border-color: #ccc;
-}
-
-.btn-primary.pseudo-class-hover,
-.btn-primary.pseudo-class-focus {
-  background-color: #217dbb;
-  border-color: #217dbb;
-}
-
-.btn-success.pseudo-class-hover,
-.btn-success.pseudo-class-focus {
-  background-color: #25a25a;
-  border-color: #25a25a;
-}
-
-.btn-info.pseudo-class-hover,
-.btn-info.pseudo-class-focus {
-  background-color: #3b9cde;
-  border-color: #3b9cde;
-}
-
-.btn-warning.pseudo-class-hover,
-.btn-warning.pseudo-class-focus {
-  background-color: #c87f0a;
-  border-color: #c87f0a;
-}
-
-.btn-danger.pseudo-class-hover,
-.btn-danger.pseudo-class-focus {
-  background-color: #d62c1a;
-  border-color: #d62c1a;
 }
 
 a.pseudo-class-focus,
@@ -1310,43 +1238,16 @@ button.pseudo-class-focus,
   margin-bottom: 0;
 }
 
-.alert-success .close.pseudo-class-hover {
-  color: #000;
-}
-
-.alert-info .close.pseudo-class-hover {
-  color: #0b2c42;
-}
-
-.alert-warning .close.pseudo-class-hover {
-  color: #060400;
-}
-
-.alert-danger .close.pseudo-class-hover {
-  color: #200704;
-}
-
 .btn-group--header button.pseudo-class-hover {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
 .form-control.pseudo-class-focus {
-  border-color: #b3b3b3;
   -webkit-box-shadow: 0 0 0;
   -ms-box-shadow: 0 0 0;
   -o-box-shadow: 0 0 0;
   box-shadow: 0 0 0;
-}
-
-.input-group-addon .quantity-right-plus.pseudo-class-hover,
-.input-group-addon .quantity-left-minus.pseudo-class-hover {
-  color: #4d4d4d;
-}
-
-.input-number.pseudo-class-focus {
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
 }
 
 .table-responsive-custom thead > tr > th.pseudo-class-first-child {
@@ -1367,10 +1268,6 @@ button.pseudo-class-focus,
   text-align: right;
 }
 
-.tabs--default .nav-tabs > li.active > a.pseudo-class-hover {
-  border-bottom: 1px solid #333;
-}
-
 .tabs--default .nav-tabs > li > a.pseudo-class-hover,
 .tabs--default .nav-tabs > li > a.pseudo-class-focus {
   background-color: transparent;
@@ -1379,11 +1276,6 @@ button.pseudo-class-focus,
 .tabs--default .nav-tabs > li > a.pseudo-class-hover {
   border: none;
   border-bottom: 1px solid transparent;
-  color: #333;
-}
-
-.tabs--media .nav-tabs > li.active > a.pseudo-class-hover {
-  border-bottom: 1px solid #333;
 }
 
 .tabs--media .nav-tabs > li > a.pseudo-class-hover,
@@ -1394,11 +1286,6 @@ button.pseudo-class-focus,
 .tabs--media .nav-tabs > li > a.pseudo-class-hover {
   border: none;
   border-bottom: 1px solid transparent;
-  color: #333;
-}
-
-.tabs--design-2 .nav-tabs > li.active > a.pseudo-class-hover {
-  border-bottom: 1px solid #333;
 }
 
 .tabs--design-2 .nav-tabs > li > a.pseudo-class-hover,
@@ -1409,28 +1296,15 @@ button.pseudo-class-focus,
 .tabs--design-2 .nav-tabs > li > a.pseudo-class-hover {
   border: none;
   border-bottom: 1px solid transparent;
-  color: #333;
 }
 
 .tabs--vertical .nav-tabs > li.active > a.pseudo-class-hover {
   border-bottom: 1px solid transparent;
-  border-left: 6px solid #4d4d4d;
-}
-
-.tabs--vertical .nav-tabs > li > a.pseudo-class-hover,
-.tabs--vertical .nav-tabs > li > a.pseudo-class-focus {
-  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .tabs--vertical .nav-tabs > li > a.pseudo-class-hover {
   border: none;
   border-bottom: 1px solid transparent;
-  border-left: 6px solid #b3b3b3;
-  color: #333;
-}
-
-.media-left .img-link.pseudo-class-hover {
-  border: 1px solid #4d4d4d;
 }
 
 .panel.pseudo-class-last-of-type {

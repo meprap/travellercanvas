@@ -1,7 +1,0 @@
-@import "./utilities/mixins";
-@import "./utilities/breakpoint";
-@import "./theme/fonts/default";
-
-body {
-    @include font($base-font, normal, 400);
-}

@@ -8,12 +8,8 @@
             max-width: 100%;
         }
         .img-link {
-            border: 1px solid $color-border;
             display: block;
             padding: 5px;
-            &:hover {
-                border: 1px solid $color-70;
-            }
         }
     }
     &-body {

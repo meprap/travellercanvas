@@ -1,6 +1,4 @@
-@import "./utilities/functions";
-@import "./utilities/mixins";
-@import "./utilities/vars";
-@import "./base/branding";
+@import './base/functions',
+        './base/global-vars';
 
-$color-body-bg:         $color-white;
+$color-body: $color-white;

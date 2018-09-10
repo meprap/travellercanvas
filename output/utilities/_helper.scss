@@ -1,26 +1,3 @@
-.bg {
-    &-primary {
-        background-color: $color-primary;
-        color: $color-white;
-    }
-    &-success {
-        background-color: $color-success;
-        color: $color-white;
-    }
-    &-info {
-        background-color: $color-info;
-        color: $color-white;
-    }
-    &-warning {
-        background-color: $color-warning;
-        color: $color-white;
-    }
-    &-danger {
-        background-color: $color-danger;
-        color: $color-white;
-    }
-}
-
 .text {
     &-lg {
         @include font-size(2);
@@ -33,21 +10,6 @@
     }
     &-xs {
         @include font-size(1.2);
-    }
-    &-primary {
-        color: $color-primary;
-    }
-    &-success {
-        color: $color-success;
-    }
-    &-info {
-        color: $color-info;
-    }
-    &-warning {
-        color: $color-warning;
-    }
-    &-danger {
-        color: $color-danger;
     }
 }
 
@@ -87,25 +49,6 @@
 .label {
     padding: 5px 8px;
     font-weight: 500;
-    &-default {
-        background-color: $color-10;
-        color: $color-70;
-    }
-    &-primary {
-        background-color: $color-primary;
-    }
-    &-success {
-        background-color: $color-success;
-    }
-    &-info {
-        background-color: $color-info;
-    }
-    &-warning {
-        background-color: $color-warning;
-    }
-    &-danger {
-        background-color: $color-danger;
-    }
 }
 
 .truncate {

@@ -1,8 +1,6 @@
 @import 'vendors/animate/animate',
         'vendors/bootstrap/bootstrap',
         'vendors/pvt-icons/pvc-icons';
-
-@import "base/branding";
         
 @import "utilities/path",
         "utilities/functions",
@@ -13,8 +11,7 @@
         "utilities/gutter",
         "utilities/helper";
 
-@import "base/units",
-        "base/typo",
+@import "base/typo",
         "base/config";
 
 @import 'modules/navbar',

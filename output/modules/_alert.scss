@@ -10,36 +10,4 @@
         @include position(absolute, $top: 15px, $right: 15px);
         @include opacity(1);
     }
-    &-success {
-        .close {
-            color: darken($color-success, 25%);
-            &:hover {
-                color: darken($color-success, 50%);
-            }
-        }
-    }
-    &-info {
-        .close {
-            color: darken($color-info, 25%);
-            &:hover {
-                color: darken($color-info, 50%);
-            }
-        }
-    }
-    &-warning {
-        .close {
-            color: darken($color-warning, 25%);
-            &:hover {
-                color: darken($color-warning, 50%);
-            }
-        }
-    }
-    &-danger {
-        .close {
-            color: darken($color-danger, 25%);
-            &:hover {
-                color: darken($color-danger, 50%);
-            }
-        }
-    }
 }
