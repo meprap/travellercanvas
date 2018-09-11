@@ -18,6 +18,7 @@ var gulp = require('gulp'),
     webstandards = require('gulp-webstandards'),
     outputPath = 'output';
 
+
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
     return gulp.src("dev/scss/*.scss")
@@ -34,11 +35,13 @@ gulp.task('sass', function() {
         .pipe(bs.stream());
 });
 
+
 // Copy web fonts to dist
 gulp.task('fonts', function() {
     return gulp.src(['dev/fonts/**'])
         .pipe(gulp.dest('dist/fonts'))
 });
+
 
 // HTML minify
 gulp.task('htmlmin', function() {
@@ -69,6 +72,7 @@ gulp.task('scripts', function() {
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('dist/scripts'))
 });
+
 
 // Images minify
 gulp.task('images', function() {
