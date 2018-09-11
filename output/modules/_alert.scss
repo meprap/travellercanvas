@@ -5,7 +5,6 @@
         margin-bottom: 0;
     }
     .close {
-        @include font-size(1.6);
         float: none;
         @include position(absolute, $top: 15px, $right: 15px);
         @include opacity(1);

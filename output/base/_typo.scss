@@ -1,45 +1,24 @@
 h1 {
-    @include font-size(4);
     @extend %heading;
-    @include breakpoint(xs) {
-        @include font-size(4/1.25);
-    }
 }
 
 h2 {
-    @include font-size(3.5);
     @extend %heading;
-    @include breakpoint(xs) {
-        @include font-size(3.5/1.25);
-    }
 }
 
 h3 {
-    @include font-size(3);
     @extend %heading;
-    @include breakpoint(xs) {
-        @include font-size(3/1.25);
-    }
 }
 
 h4 {
-    @include font-size(2.5);
     @extend %heading;
-    @include breakpoint(xs) {
-        @include font-size(2.5/1.25);
-    }
 }
 
 h5 {
-    @include font-size(2);
     @extend %heading;
-    @include breakpoint(xs) {
-        @include font-size(2/1.1);
-    }
 }
 
 h6 {
-    @include font-size(1.5);
     @extend %heading;
 }
 
@@ -55,12 +34,4 @@ p {
     @include last-child() {
         margin-bottom: 0;
     }
-}
-
-b {
-    font-weight: 500;
-}
-
-strong {
-    font-weight: 600;
 }

@@ -6,7 +6,6 @@
             }
         }
         thead {
-            @include font-size(1.6);
             >tr {
                 >th {
                     padding: 15px 8px;
@@ -57,9 +56,6 @@
                 }
             }
         }
-        th {
-            font-weight: 500;
-        }
         tr {
             @include breakpoint(xs) {
                 display: block;
@@ -73,8 +69,6 @@
                     content: attr(data-label);
                     width: auto;
                     float: none;
-                    @include font-size(1.5);
-                    font-weight: 500;
                     margin-right: 15px;
                     margin-bottom: 15px;
                     @include ellipsis(20px, 1);

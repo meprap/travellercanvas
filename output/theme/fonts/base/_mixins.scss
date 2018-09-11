@@ -1,0 +1,34 @@
+// Font Size
+// eg: @include font-size(1); = 10px | 1rem
+@mixin font-size($sizeValue: 1.6) {
+    font-size: ($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+}
+
+// Font Family
+// eg: @include font($base-font, normal, 400);
+@mixin font($font, $style: normal, $weight: normal) {
+    font-family: $font;
+    font-style: $style;
+    font-weight: $weight;
+}
+
+// Icons Pseudo
+// eg: @include theme-pseudo; [within the pseudo class]
+// @mixin theme-pseudo {
+//     position: absolute;
+//     @include font($theme-icons, normal, normal);
+// }
+
+// Font Smoothing
+// eg: include font-smoothing(on);
+@mixin font-smoothing($value: on) {
+    @if $value==on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    @if $value==off {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}

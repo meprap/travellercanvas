@@ -21,9 +21,6 @@
                 @include opacity(1);
             }
         }
-        i {
-            @include font-size(2);
-        }
     }
 }
 
@@ -72,14 +69,10 @@
     width: 50px !important;
     padding: 10px;
     text-align: center;
-    @include font-size(1.6);
-    font-weight: 500;
 }
 
 label {
     &.error {
-        font-weight: 400;
-        @include font-size(1.1);
         @include position(absolute, $bottom: -23px, $left: auto);
     }
 }
