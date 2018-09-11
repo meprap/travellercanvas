@@ -1,7 +1,4 @@
-@import 'base/functions',
-        'base/global-vars',
-        'theme/colors/base/mixins',
-        'theme/colors/default/vars',
+@import 'theme/colors/default/vars',
         'utilities/breakpoint';
 
 
@@ -9,6 +6,23 @@
 a {
     @include links($color-link, $color-visited, $color-link-hover, $color-active);
 }
+
+
+// Placeholder
+%heading {
+    color: $color-header;
+}
+
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @extend %heading;
+} 
 
 
 // Helpers

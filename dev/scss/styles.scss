@@ -2,17 +2,17 @@
         'vendors/bootstrap/bootstrap';
         // 'vendors/pvt-icons/pvc-icons';
         
-@import "utilities/path",
-        "utilities/functions",
-        "utilities/vars",
-        "utilities/mixins",
-        "utilities/breakpoint",
-        "utilities/placeholders",
-        "utilities/gutter",
-        "utilities/helper";
+@import 'utilities/path',
+        'utilities/functions',
+        'utilities/global-vars',
+        'utilities/mixins',
+        'utilities/breakpoint',
+        'utilities/placeholders',
+        'utilities/gutter',
+        'utilities/helper';
 
-@import "base/typo",
-        "base/config";
+@import 'base/typo',
+        'base/config';
 
 @import 'modules/navbar',
         'modules/button',
@@ -29,6 +29,6 @@
         'modules/media',
         'modules/panel';
 
-@import "layout/header",
-        "layout/footer",
-        "layout/main";
+@import 'layout/header',
+        'layout/footer',
+        'layout/main';

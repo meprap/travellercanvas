@@ -1,0 +1,17 @@
+
+$global: 'theme';
+
+// Color Variables
+$color-white : #fff;
+$color-black : #000;
+
+// Dark Alpha Color Swatches
+$color-10: darken($color-white, 10%); // #e6e6e6
+$color-20: darken($color-white, 20%); // #cccccc
+$color-30: darken($color-white, 30%); // #b3b3b3
+$color-40: darken($color-white, 40%); // #999999
+$color-50: darken($color-white, 50%); // #808080
+$color-60: darken($color-white, 60%); // #666666
+$color-70: darken($color-white, 70%); // #4d4d4d
+$color-80: darken($color-white, 80%); // #333333
+$color-90: darken($color-white, 90%); // #1a1a1a

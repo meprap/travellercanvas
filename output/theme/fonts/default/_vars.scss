@@ -1,6 +1,7 @@
-@import '../base/mixins';
+@import '../base/functions',
+        '../base/mixins';
 
-@import url('https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i|Titillium+Web:300,300i,400,400i,600,600i,700,700i,900&subset=latin-ext,vietnamese');
+@import url('//fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i|Titillium+Web:300,300i,400,400i,600,600i,700,700i,900&subset=latin-ext,vietnamese');
 
 
 // Font Variables

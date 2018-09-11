@@ -1,18 +1,26 @@
+@import '../../../utilities/functions',
+        '../../../utilities/global-vars',
+        '../base/mixins';
+
 // Brand Color
-$color-brand: $color-90;
+$color-brand: #db5461;
+$color-brand-secondary: #62bbc1;
 
 // Bootstrap Color
 $color-primary : #3498DB !default;
-$color-success : #2ECC71 !default;
+$color-success : $color-brand-secondary !default;
 $color-info : #67B2E5 !default;
 $color-warning : #F39C12 !default;
 $color-danger : #E74C3C !default;
 
 // Page Color Properties
-$color-base: $color-70;
-$color-link: $color-50;
-$color-link-hover: $color-brand;
+$color-base: #010400;
+$color-header: $color-black;
+
+$color-link: $color-brand;
+$color-link-hover: darken($color-brand, 10%);
+$color-link-secondary: $color-brand-secondary;
+$color-link-secondary-hover: darken($color-brand-secondary, 10%);
 $color-visited: $color-50;
 $color-active: $color-50;
 $color-border: $color-10;
-$color-header: $color-90;
