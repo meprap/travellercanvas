@@ -25,7 +25,6 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "gulp-webstandards": "^0.1.1",
-    "jshint": "^2.9.4",
-    "sc5-styleguide": "^1.8.1"
+    "jshint": "^2.9.4"
   }
 }

@@ -13,7 +13,6 @@ var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     strip = require('gulp-strip-comments'),
     fileinclude = require('gulp-file-include'),
-    styleguide = require('sc5-styleguide'),
     sass = require('gulp-sass'),
     bs = require('browser-sync').create(),
     webstandards = require('gulp-webstandards'),
@@ -83,43 +82,6 @@ gulp.task('images', function() {
         .pipe(gulp.dest('dist/images'))
 });
 
-gulp.task('styleguide:generate', function() {
-    return gulp.src('dev/scss/**/*.scss')
-        .pipe(styleguide.generate({
-            title: 'Styleguide Name',
-            server: true, // Un-Comment this code if you want to host the styleguide locally
-            port: 3003,
-            rootPath: outputPath,
-            overviewPath: 'README.md',
-            //appRoot: '/frontend-architecture/output', // Un-Comment this code if you want to host the styleguide on Server.
-            extraHead: [
-                '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>'
-            ],
-            disableEncapsulation: true
-        }))
-        .pipe(gulp.dest(outputPath))
-});
-
-
-gulp.task('styleguide:applystyles', function() {
-    return gulp.src('dist/css/styles.min.css')
-        .pipe(sass({
-            errLogToConsole: true
-        }))
-        .pipe(styleguide.applyStyles())
-        .pipe(gulp.dest(outputPath))
-});
-
-// Static Server with files compress with Stuleguide
-gulp.task('serve', ['sass', 'htmlmin', 'styleguide'], function() {
-    bs.init({
-        server: "dist/"
-    });
-    gulp.watch("dev/scss/**/*.scss", ['sass', 'styleguide']).on('change', bs.reload);
-    gulp.watch("dev/images/**/*", ['images']).on('change', bs.reload);
-    gulp.watch("dev/scripts/**/*.js", ['scripts']).on('change', bs.reload);
-    gulp.watch("dev/**/*.html", ['htmlmin']).on('change', bs.reload);
-});
 
 // Static Server with files compress without Styleguide
 gulp.task('serve-w-s', ['sass', 'htmlmin'], function() {
@@ -137,6 +99,4 @@ gulp.task('webstandards', function() {
         .pipe(webstandards());
 });
 
-gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
-gulp.task('servews', ['serve-w-s', 'fonts']);
-gulp.task('default', ['serve', 'styleguide', 'fonts']);
+gulp.task('default', ['serve-w-s',  'fonts']);
