@@ -1,3 +1,17 @@
-node_modules/
-# Ignore Mac DS_Store files
+/node_modules
+/public/storage
+/public/sites
+/vendor
+/.idea
+Homestead.json
+Homestead.yaml
+.env*
+!.env.example
+!.env.server
+.php_cs_cache
+/coverage
+/log
+supervisord.pid
 .DS_Store
+.vscode
+/.history
