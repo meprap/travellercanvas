@@ -6,9 +6,8 @@
     @include vendor-prefix(background-size, cover);
 }
 
-// Clear list
-%list-none {
-    list-style-type: none;
+// Clear gutter
+%clear-gutter {
     margin: 0;
     padding: 0;
 }

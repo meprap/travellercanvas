@@ -1,0 +1,15 @@
+blockquote {
+    border: none;
+    position: relative;
+    padding-left: 50px;
+    &::before {
+        content: '\f10d';
+        position: absolute;
+        font-family:'FontAwesome';
+        top: 0;
+        left: 0;
+    }
+    footer {
+        margin-top: 10px;
+    }
+}

@@ -14,13 +14,19 @@ $color-warning : #F39C12 !default;
 $color-danger : #E74C3C !default;
 
 // Page Color Properties
-$color-base: #010400;
-$color-header: $color-black;
+$color-base: $color-80;
+$color-header-typo: $color-black;
+$color-semi-light: $color-50;
+$color-light: $color-10;
+$color-semi-dark: $color-70;
+$color-dark: $color-90;
 
-$color-link: $color-brand;
-$color-link-hover: darken($color-brand, 10%);
-$color-link-secondary: $color-brand-secondary;
-$color-link-secondary-hover: darken($color-brand-secondary, 10%);
-$color-visited: $color-50;
-$color-active: $color-50;
+$color-link-default: $color-brand-secondary;
+$color-link-default-hover: $color-90;
+$color-link-brand: $color-brand;
+$color-link-brand-hover: $color-90;
+$color-link-light: $color-40;
+$color-link-light-hover: $color-90;
+$color-visited: $color-base;
+$color-active: $color-base;
 $color-border: $color-10;

@@ -1,5 +1,5 @@
 @import 'theme/fonts/default/vars',
-        'utilities/breakpoint';
+'utilities/breakpoint';
 
 // Global
 body {
@@ -20,12 +20,15 @@ body {
     &-lg {
         @include font-size(2);
     }
+
     &-md {
         @include font-size(1.6);
     }
+
     &-sm {
         @include font-size(1.4);
     }
+
     &-xs {
         @include font-size(1.2);
     }
@@ -33,15 +36,18 @@ body {
 
 .label {
     font-weight: 500;
+    @include font-size(1.4);
 }
 
 .icon-holder {
     &--lg {
         @include font-size(2.5);
     }
+
     &--md {
         @include font-size(2);
     }
+
     &--sm {
         @include font-size(1.5);
     }
@@ -118,19 +124,25 @@ strong {
 
 // Buttons
 .btn {
-    @include font($header-font, normal, 500);
+    @include font($header-font, normal, 600);
+    @include font-size(1.8);
+
     &--xl {
-        @include font-size(2.2);
+        @include font-size(2.5);
     }
+
     &--lg {
         @include font-size(2);
     }
+
     &--md {
         @include font-size(1.8);
     }
+
     &--sm {
         @include font-size(1.6);
     }
+
     &--xs {
         @include font-size(1.2);
     }
@@ -138,6 +150,22 @@ strong {
 
 
 // Forms
+.form-control {
+    @include font-size(1.5);
+
+    &--xs {
+        @include font-size(1.4);
+    }
+
+    &--50 {
+        width: 50%;
+    }
+
+    &--75 {
+        width: 75%;
+    }
+}
+
 .btn-group {
     &--header {
         i {
@@ -165,7 +193,34 @@ label {
         @include font-size(0);
         line-height: 0;
     }
+
     span {
+        @include font-size(2);
+        text-transform: uppercase;
+    }
+}
+
+
+// Blockquote
+blockquote {
+    @include font-size(1.8);
+
+    &::before {
+        @include font-size(3);
+    }
+}
+
+
+// Breadcrumbs
+.breadcrumb {
+    @include font-size(1.8);
+}
+
+
+// Pagination
+.pager {
+    li {
+        @include font($header-font, normal, 600);
         @include font-size(2);
         text-transform: uppercase;
     }
@@ -178,9 +233,11 @@ label {
         thead {
             @include font-size(1.6);
         }
+
         th {
             font-weight: 500;
         }
+
         td {
             @include breakpoint(xs) {
                 &:before {
@@ -201,9 +258,11 @@ label {
                 >a {
                     font-weight: 500;
                     @include font-size(1.8);
+
                     @include breakpoint(sm) {
                         @include font-size(1.6);
                     }
+
                     @include breakpoint(xs) {
                         @include font-size(1.5);
                     }
@@ -211,16 +270,20 @@ label {
             }
         }
     }
+
     &--media {
         .nav-tabs {
             >li {
                 @include font-size(0);
+
                 >a {
                     font-weight: 500;
                     @include font-size(1.8);
+
                     @include breakpoint(sm) {
                         @include font-size(1.6);
                     }
+
                     @include breakpoint(xs) {
                         @include font-size(1.5);
                     }
@@ -228,18 +291,22 @@ label {
             }
         }
     }
+
     // Delete the below codes
     &--design {
         &-2 {
             .nav-tabs {
                 >li {
                     @include font-size(0);
+
                     >a {
                         font-weight: 500;
                         @include font-size(1.8);
+
                         @include breakpoint(sm) {
                             @include font-size(1.6);
                         }
+
                         @include breakpoint(xs) {
                             @include font-size(1.5);
                         }
@@ -248,6 +315,7 @@ label {
             }
         }
     }
+
     &--vertical {
         .nav-tabs {
             >li {
@@ -259,6 +327,3 @@ label {
         }
     }
 }
-
-
-

@@ -1,0 +1,15 @@
+ul,
+ol {
+    @extend %clear-gutter;
+    list-style-position: inside;
+    >li {
+        margin: 0 0 15px;
+        >ul {
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+        @include last-child() {
+            margin-bottom: 0;
+        }
+    }
+}

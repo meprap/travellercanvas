@@ -1,16 +1,20 @@
 @import 'theme/colors/default/vars',
-        'utilities/breakpoint';
+'utilities/breakpoint';
 
 
 // Global
+body {
+    color: $color-base;
+}
+
 a {
-    @include links($color-link, $color-visited, $color-link-hover, $color-active);
+    @include links($color-link-default, $color-visited, $color-link-default-hover, $color-active);
 }
 
 
 // Placeholder
 %heading {
-    color: $color-header;
+    color: $color-header-typo;
 }
 
 
@@ -22,10 +26,19 @@ h4,
 h5,
 h6 {
     @extend %heading;
-} 
+}
 
 
 // Helpers
+.link {
+    &-brand {
+        @include links($color-link-brand, $color-visited, $color-link-brand-hover, $color-active);
+    }
+    &-light {
+        @include links($color-link-light, $color-visited, $color-link-light-hover, $color-active);
+    }
+}
+
 .bg {
     &-primary {
         background-color: $color-primary;
@@ -73,6 +86,38 @@ h6 {
     &-danger {
         color: $color-danger;
     }
+
+    &-brand {
+        color: $color-brand;
+    }
+
+    &-brand-secondary {
+        color: $color-brand-secondary;
+    }
+
+    &-brand-secondary-light {
+        color: lighten($color-brand-secondary, 10%);
+    }
+
+    &-base {
+        color: $color-base;
+    }
+
+    &-semi-light {
+        color: $color-semi-light;
+    }
+
+    &-light {
+        color: $color-light;
+    }
+
+    &-semi-dark {
+        color: $color-semi-dark;
+    }
+
+    &-dark {
+        color: $color-dark;
+    }
 }
 
 .label {
@@ -83,71 +128,100 @@ h6 {
 
     &-primary {
         background-color: $color-primary;
+        color: $color-white;
     }
 
     &-success {
         background-color: $color-success;
+        color: $color-white;
     }
 
     &-info {
         background-color: $color-info;
+        color: $color-white;
     }
 
     &-warning {
         background-color: $color-warning;
+        color: $color-white;
     }
 
     &-danger {
         background-color: $color-danger;
+        color: $color-white;
     }
 
     &-brand {
         background-color: $color-brand;
+        color: $color-white;
+    }
+    
+    &-brand-light {
+        background-color: lighten($color-brand, 10%);
+        color: $color-white;
     }
 
-    &-brand-secodary {
+    &-brand-secondary {
         background-color: $color-brand-secondary;
+        color: $color-white;
+    }
+
+    &-brand-secondary-light {
+        background-color: lighten($color-brand-secondary, 10%);
+        color: $color-white;
+    }
+
+    &-base {
+        background-color: $color-base;
+        color: $color-white;
+    }
+
+    &-semi-light {
+        background-color: $color-semi-light;
+        color: $color-white;
+    }
+
+    &-light {
+        background-color: $color-light;
+        color: $color-base;
+    }
+
+    &-semi-dark {
+        background-color: $color-semi-dark;
+        color: $color-white;
+    }
+
+    &-dark {
+        background-color: $color-dark;
+        color: $color-white;
     }
 }
 
 
 // Buttons
 .btn {
-    &-light {
-        background-color: $color-10;
-        border-color: $color-10;
-        color: $color-70;
-
-        &:hover,
-        &:focus {
-            background-color: $color-50;
-            border-color: $color-50;
-            color: $color-white;
-        }
-    }
-
-    &-semi-light {
-        background-color: $color-30;
-        border-color: $color-30;
-        color: $color-90;
-
-        &:hover,
-        &:focus {
-            background-color: $color-70;
-            border-color: $color-70;
-            color: $color-white;
-        }
-    }
-
-    &-dark {
-        background-color: $color-70;
-        border-color: $color-70;
+    &-brand {
+        background-color: $color-brand;
+        border-color: $color-brand;
         color: $color-white;
 
         &:hover,
         &:focus {
-            background-color: $color-90;
-            border-color: $color-90;
+            background-color: darken($color-brand, 20%);
+            border-color: darken($color-brand, 20%);
+            color: $color-white;
+        }
+    }
+
+    &-brand-secondary {
+        background-color: $color-brand-secondary;
+        border-color: $color-brand-secondary;
+        color: $color-white;
+
+        &:hover,
+        &:focus {
+            background-color: darken($color-brand-secondary, 20%);
+            border-color: darken($color-brand-secondary, 20%);
             color: $color-white;
         }
     }
@@ -225,6 +299,12 @@ h6 {
     &-default {
         background-color: $color-90;
     }
+}
+
+
+// Pager
+.pager {
+    border-color: $color-light;
 }
 
 

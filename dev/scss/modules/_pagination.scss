@@ -1,0 +1,14 @@
+.pager {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 20px 0;
+    li {
+        >a {
+            border: none;
+            &:hover,
+            &:focus {
+                background-color: transparent;
+            }
+        }
+    }
+}
