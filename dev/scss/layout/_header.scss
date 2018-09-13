@@ -1,0 +1,36 @@
+.#{$global} {
+    &-header {
+        background-color: green;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        transform: translateZ(0);
+        will-change: transform;
+        transition: transform .5s;
+
+        &.is-hidden {
+            transform: translateY(-50%);
+        }
+
+        &__brand {
+            padding: 15px 0;
+        }
+
+        &__navbar {
+            background-color: black;
+            width: 100%;
+            height: auto;
+            padding: 15px 0;/* this should be same as .theme-header__brand */
+            position: relative;
+            color: red;
+            z-index: 1;
+            clear: both;
+            transform: translateZ(0);
+            will-change: transform;
+            transition: -webkit-transform .5s;
+            transition: transform .5s;
+        }
+    }
+}
