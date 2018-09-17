@@ -1,3 +1,10 @@
+input,
+.btn {
+    &:focus {
+        outline: none;
+    }
+}
+
 .btn-group {
     &--header {
         @include centerer(false, true);

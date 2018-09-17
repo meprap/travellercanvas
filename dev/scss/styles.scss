@@ -15,11 +15,13 @@
         'base/config';
 
 @import 'modules/navbar',
+        'modules/pushy',
         'modules/blockquote',
         'modules/button',
         'modules/alert',
         'modules/hr',
         'modules/forms',
+        'modules/search',
         'modules/nano',
         'modules/dropdown',
         'modules/loader',
@@ -31,6 +33,7 @@
         'modules/pagination',
         'modules/or',
         'modules/media',
+        'modules/social',
         'modules/panel';
 
 @import 'layout/header',

@@ -27,7 +27,7 @@ function footerAdjustment() {
 
 
 
-
+// Auto Hide Navbar
 jQuery(document).ready(function($){
 	var mainHeader = $('.theme-header'),
 		secondaryNavigation = $('.theme-header__navbar'),

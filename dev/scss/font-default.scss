@@ -146,6 +146,11 @@ strong {
     &--xs {
         @include font-size(1.2);
     }
+
+    &-burger {
+        @include font-size(3);
+        line-height: 1;
+    }
 }
 
 
@@ -325,5 +330,41 @@ blockquote {
                 }
             }
         }
+    }
+}
+
+
+// Social 
+.social {
+    &-icons {
+        >li {
+            a {
+                @include font-size(2);
+            }
+        }
+    }
+}
+
+
+// Navbar
+.navbar {
+    &-brand {
+        @include font($header-font, normal, 700);
+        @include font-size(3);
+        line-height: 1.2;
+    }
+    &-nav {
+        font-weight: 700;
+    }
+}
+
+
+// Search
+.search {
+    i {
+        @include font-size(2);
+    }
+    input {
+        font-style: italic;
     }
 }

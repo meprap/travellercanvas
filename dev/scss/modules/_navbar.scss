@@ -1,8 +1,23 @@
 .navbar {
-    &-default {
-        border: none;
+    &-nav {
+        float: none;
+        display: inline-block;
         margin: 0;
-        padding: 0 15px;
-        top: auto;
+        padding: 0;
+        line-height: 1;
+        >li {
+            margin: 0;
+            >a {
+                padding: 20px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &-brand {
+        height: auto;
+        float: none;
+        display: inline-block;
+        padding: 0;
+        text-transform: uppercase;
     }
 }

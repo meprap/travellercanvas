@@ -1,0 +1,42 @@
+.search {
+    width: 100%;
+    display: inline-block;
+
+    &>* {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &--header-top {
+        margin-top: 6px;
+    }
+
+    &__blog {
+        position: relative;
+
+        &:before {
+            content: '\f002';
+            font-family: 'FontAwesome';
+            position: absolute;
+        }
+    }
+
+    input[type=search] {
+        border: none;
+        width: 120px;
+        padding-left: 20px;
+        color: transparent;
+        cursor: pointer;
+        transition: all .5s ease;
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+        }
+
+        &:focus {
+            width: 250px;
+            cursor: auto;
+        }
+    }
+}

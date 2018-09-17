@@ -291,6 +291,10 @@ h6 {
             border-color: darken($color-danger, 10%);
         }
     }
+
+    &-burger {
+        background-color: transparent;
+    }
 }
 
 
@@ -618,18 +622,88 @@ label {
 }
 
 
+// Pushy
+.pushy {
+    background: red;
+}
+
+.pushy-open-left,
+.pushy-open-right {
+    .site-overlay {
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+}
+
+
 // Pages
 .#{$global} {
     &-header {
-        &--demo {
-            color: $color-50;
+        &__brand {
+            background-color: $color-header-brand;
+            border-color: $color-70;
+            color: $color-semi-light;
+        }
+        &__navbar {
+            background-color: $color-header-navbar;
+            color: $color-semi-light;
         }
     }
 
     &-footer {
-        &--demo {
-            background-color: $color-90;
-            color: $color-50;
+        &__info {
+            background-color: $color-footer-info;
+            color: $color-semi-light;
         }
+        &__copyright {
+            background-color: $color-footer-copyright;
+            color: $color-semi-light;
+        }
+    }
+}
+
+
+// Navbar
+.navbar {
+    &-nav {
+        >li {
+            >a {
+                background-color: transparent;
+                @include links($color-semi-light, $color-semi-light, $color-brand, $color-semi-light);
+                &:hover,
+                &:focus {
+                    background-color: transparent;
+                }
+            }
+            &.active {
+                a {
+                    color: $color-brand;
+                }
+            }
+        }
+    }
+    &-brand {
+        span {
+            color: $color-brand;
+        }
+    }
+}
+
+
+// Social 
+.social {
+    &-icons {
+        >li {
+            >a {
+                @include links($color-semi-light, $color-semi-light, $color-brand, $color-semi-light);
+            }
+        }
+    }
+}
+
+
+// Search
+.search {
+    input {
+        background-color: transparent;
     }
 }
