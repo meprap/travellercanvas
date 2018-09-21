@@ -1,8 +1,8 @@
 .#{$global} {
     &-main {
         min-height: 100%;
-        padding-bottom: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
+        &__content {
+            @extend %content-gutter;
+        }
     }
 }

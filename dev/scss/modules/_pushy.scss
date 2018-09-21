@@ -20,6 +20,29 @@
     &-content {
         visibility: hidden;
         transition: visibility 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+
+        .navbar-nav {
+            .open {
+                .dropdown-menu {
+                    @include border-radius(0);
+                    padding: 10px 15px;
+                    &>li {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-nav {
+        display: block;
+        padding: 15px 0;
+
+        >li {
+            >a {
+                padding: 15px 25px;
+            }
+        }
     }
 }
 

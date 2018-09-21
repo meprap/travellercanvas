@@ -8,31 +8,11 @@
 					</div>
 				</div>
 				<div class="hidden-xs hidden-sm col-md-4 col-md-pull-4">
-					<ul class="social-icons list-unstyled list-inline">
-						<li>
-							<a href="javascript:;" class="fa fa-facebook"></a>
-						</li>
-						<li>
-							<a href="javascript:;" class="fa fa-twitter"></a>
-						</li>
-						<li>
-							<a href="javascript:;" class="fa fa-google"></a>
-						</li>
-						<li>
-							<a href="javascript:;" class="fa fa-youtube"></a>
-						</li>
-						<li>
-							<a href="javascript:;" class="fa fa-instagram"></a>
-						</li>
-					</ul>
+					@@include('social.html')
 				</div>
 				<div class="hidden-xs hidden-sm col-md-4">
 					<div class="search search--header-top text-right">
-						<form class="search__blog">
-							<input type="search" placeholder="Search Blog...">
-						</form>
-						<!-- <i class="fa fa-search"></i>
-						<input type="text" placeholder="Search Blog..." aria-describedby="basic-addon1"> -->
+						@@include('search.html')
 					</div>
 				</div>
 			</div>
@@ -42,52 +22,11 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12 clearfix">
-					<ul class="social-icons list-unstyled list-inline visible-xs visible-sm">
-						<li>
-							<a href="javascript:;" class="fa fa-facebook"></a>
-						</li>
-						<li>
-							<a href="javascript:;" class="fa fa-twitter"></a>
-						</li>
-						<li>
-							<a href="javascript:;" class="fa fa-google"></a>
-						</li>
-						<li>
-							<a href="javascript:;" class="fa fa-youtube"></a>
-						</li>
-						<li>
-							<a href="javascript:;" class="fa fa-instagram"></a>
-						</li>
-					</ul>
+					<div class="visible-xs visible-sm">
+						@@include('social.html')
+					</div>
 					<div class="text-center hidden-xs hidden-sm">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Single Post</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages
-										<i class="fa fa-angle-down"></i></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Something else here</a></li>
-									<li role="separator" class="divider"></li>
-									<li><a href="#">Separated link</a></li>
-									<li role="separator" class="divider"></li>
-									<li><a href="#">One more separated link</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category
-									<i class="fa fa-angle-down"></i></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Something else here</a></li>
-									<li><a href="#">One more separated link</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Short Codes</a></li>
-							<li><a href="#">Contact Us</a></li>
-						</ul>
+						@@include('navbar.html')
 					</div>
 					<!-- Menu Button -->
 					<button class="menu-btn btn-burger pull-right visible-xs visible-sm">&#9776;</button>

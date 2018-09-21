@@ -1,5 +1,8 @@
 .#{$global} {
     &-footer {
-        padding: 20px 15px;
+        &__info {
+            @extend %content-gutter;
+        }
+        &__copyright {}
     }
 }

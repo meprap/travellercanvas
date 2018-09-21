@@ -34,6 +34,7 @@ h6 {
     &-brand {
         @include links($color-link-brand, $color-visited, $color-link-brand-hover, $color-active);
     }
+
     &-light {
         @include links($color-link-light, $color-visited, $color-link-light-hover, $color-active);
     }
@@ -155,7 +156,7 @@ h6 {
         background-color: $color-brand;
         color: $color-white;
     }
-    
+
     &-brand-light {
         background-color: lighten($color-brand, 10%);
         color: $color-white;
@@ -622,19 +623,6 @@ label {
 }
 
 
-// Pushy
-.pushy {
-    background: red;
-}
-
-.pushy-open-left,
-.pushy-open-right {
-    .site-overlay {
-        background-color: rgba(0, 0, 0, 0.85);
-    }
-}
-
-
 // Pages
 .#{$global} {
     &-header {
@@ -643,9 +631,22 @@ label {
             border-color: $color-70;
             color: $color-semi-light;
         }
+
         &__navbar {
             background-color: $color-header-navbar;
             color: $color-semi-light;
+        }
+
+        .nav .open>a,
+        .nav .open>a:hover,
+        .nav .open>a:focus {
+            background-color: transparent;
+        }
+
+        .dropdown-menu {
+            >li {
+                margin: 0;
+            }
         }
     }
 
@@ -654,6 +655,7 @@ label {
             background-color: $color-footer-info;
             color: $color-semi-light;
         }
+
         &__copyright {
             background-color: $color-footer-copyright;
             color: $color-semi-light;
@@ -669,11 +671,13 @@ label {
             >a {
                 background-color: transparent;
                 @include links($color-semi-light, $color-semi-light, $color-brand, $color-semi-light);
+
                 &:hover,
                 &:focus {
                     background-color: transparent;
                 }
             }
+
             &.active {
                 a {
                     color: $color-brand;
@@ -681,10 +685,52 @@ label {
             }
         }
     }
+
     &-brand {
         span {
             color: $color-brand;
         }
+    }
+}
+
+// Pushy
+.pushy {
+    background: $color-pushy;
+
+    .nav .open>a,
+    .nav .open>a:hover,
+    .nav .open>a:focus {
+        background-color: transparent;
+    }
+
+    &-content {
+        .navbar-nav {
+            .open {
+                .dropdown-menu {
+                    background-color: lighten($color-pushy, 7.5%);
+
+                    &>li {
+                        margin: 0;
+                        >a {
+                            background-color: transparent;
+                            @include links($color-semi-light, $color-semi-light, $color-brand, $color-semi-light);
+
+                            &:hover,
+                            &:focus {
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pushy-open-left,
+.pushy-open-right {
+    .site-overlay {
+        background-color: rgba(0, 0, 0, 0.85);
     }
 }
 
