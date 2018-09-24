@@ -207,7 +207,8 @@ h6 {
         color: $color-white;
 
         &:hover,
-        &:focus {
+        &:focus,
+        &:visited {
             background-color: darken($color-brand, 20%);
             border-color: darken($color-brand, 20%);
             color: $color-white;
@@ -220,7 +221,8 @@ h6 {
         color: $color-white;
 
         &:hover,
-        &:focus {
+        &:focus,
+        &:visited {
             background-color: darken($color-brand-secondary, 20%);
             border-color: darken($color-brand-secondary, 20%);
             color: $color-white;
@@ -232,7 +234,8 @@ h6 {
         border-color: $color-10;
 
         &:hover,
-        &:focus {
+        &:focus,
+        &:visited {
             background-color: $color-20;
             border-color: $color-20;
         }
@@ -243,7 +246,8 @@ h6 {
         border-color: $color-primary;
 
         &:hover,
-        &:focus {
+        &:focus,
+        &:visited {
             background-color: darken($color-primary, 10%);
             border-color: darken($color-primary, 10%);
         }
@@ -254,7 +258,8 @@ h6 {
         border-color: $color-success;
 
         &:hover,
-        &:focus {
+        &:focus,
+        &:visited {
             background-color: darken($color-success, 10%);
             border-color: darken($color-success, 10%);
         }
@@ -265,7 +270,8 @@ h6 {
         border-color: $color-info;
 
         &:hover,
-        &:focus {
+        &:focus,
+        &:visited {
             background-color: darken($color-info, 10%);
             border-color: darken($color-info, 10%);
         }
@@ -276,7 +282,8 @@ h6 {
         border-color: $color-warning;
 
         &:hover,
-        &:focus {
+        &:focus,
+        &:visited {
             background-color: darken($color-warning, 10%);
             border-color: darken($color-warning, 10%);
         }
@@ -287,7 +294,8 @@ h6 {
         border-color: $color-danger;
 
         &:hover,
-        &:focus {
+        &:focus,
+        &:visited {
             background-color: darken($color-danger, 10%);
             border-color: darken($color-danger, 10%);
         }
@@ -581,6 +589,22 @@ label {
 }
 
 
+// Card
+.card {
+    border-color: $color-border;
+    &__caption {
+        a {
+            @include links($color-base, $color-base, $color-brand-secondary, $color-base);
+        }
+    }
+    &__tag {
+        a {
+            @include links($color-brand,$color-brand,$color-base,$color-brand,);
+        }
+    }
+}
+
+
 // Seprators
 .or {
     &:after {
@@ -690,6 +714,12 @@ label {
         span {
             color: $color-brand;
         }
+
+        &:hover,
+        &:focus,
+        &:visited {
+            color: $color-brand-secondary;
+        }
     }
 }
 
@@ -711,6 +741,7 @@ label {
 
                     &>li {
                         margin: 0;
+
                         >a {
                             background-color: transparent;
                             @include links($color-semi-light, $color-semi-light, $color-brand, $color-semi-light);
@@ -751,5 +782,29 @@ label {
 .search {
     input {
         background-color: transparent;
+        color: $color-white;
+    }
+}
+
+
+// Carousel
+.#{$global} {
+    &-carousel {
+
+        &__carousel-inner {
+
+            >.item {
+                &:after {
+                    background-color: black(.5);
+                }
+            }
+        }
+
+        &__carousel-caption {
+            >h1 {
+                color: $color-white;
+            }
+        }
+
     }
 }

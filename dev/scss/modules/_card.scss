@@ -1,0 +1,45 @@
+.card {
+    border-bottom: 1px solid;
+    padding-bottom: 30px;
+    overflow: hidden;
+
+    &__desc {
+        @include last-child() {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__tag {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__author-info {
+        @extend %list-none;
+
+        &>li {
+            display: inline-block;
+            margin-left: 10px;
+            margin-bottom: 0;
+            padding-left: 10px;
+            position: relative;
+
+            &::before {
+                content: '|';
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            @include first-child() {
+                padding-left: 0;
+                margin-left: 0;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}

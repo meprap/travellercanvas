@@ -114,7 +114,7 @@ strong {
 }
 
 
-// ertAl
+// Alert
 .alert {
     .close {
         @include font-size(1.6);
@@ -334,6 +334,42 @@ blockquote {
 }
 
 
+// Cards
+.card {
+    &__tag {
+        @include font($header-font, normal, 700);
+        @include font-size(1.2);
+    }
+
+    &__author-info {
+        @include font-size(1.2);
+    }
+
+    &--option-1 {
+        .card__desc {
+            @include font-size(1.5);
+        }
+    }
+
+    &--option-2 {
+        .card__desc {
+            @include font-size(1.8);
+        }
+    }
+
+}
+
+
+// Title
+.see-all-post {
+    @include font($header-font, normal, 700);
+    @include font-size(2);
+    @include breakpoint(xs) {
+        @include font-size(1.8);
+    }
+}
+
+
 // Social 
 .social {
     &-icons {
@@ -353,6 +389,7 @@ blockquote {
         @include font-size(3);
         line-height: 1.2;
     }
+
     &-nav {
         font-weight: 700;
     }
@@ -364,6 +401,7 @@ blockquote {
     i {
         @include font-size(2);
     }
+
     input {
         font-style: italic;
     }

@@ -1,0 +1,8 @@
+.card {
+    &__caption {
+    }
+}
+
+.author-info {
+    @extend %list-none;
+}

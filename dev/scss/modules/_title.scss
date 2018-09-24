@@ -1,0 +1,8 @@
+.see-all-post {
+    float: right;
+    display: block;
+    @include breakpoint(xs) {
+        float: none;
+        margin-bottom: 30px;
+    }
+}

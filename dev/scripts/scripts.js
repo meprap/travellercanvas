@@ -126,7 +126,6 @@ jQuery(document).ready(function ($) {
 
 
 // Owl Carousel
-
 $('.owl-carousel').owlCarousel({
 	//stagePadding: 150,
 	loop: true,
@@ -175,3 +174,67 @@ var setMinHeight = function (minheight) {
 };
 
 setMinHeight();
+
+
+// Carousel
+var Layout = (function () {
+	// handle carousel
+	var handleCarousel = function () {
+		var $item = $(".theme-carousel .carousel-inner .item");
+		$item.eq(0).addClass("active");
+		$item.addClass("full-screen");
+
+		$(".theme-carousel img").each(function () {
+			var $src = $(this).attr("src");
+			var $color = $(this).attr("data-color");
+			$(this)
+				.parent()
+				.css({
+					"background-image": "url(" + $src + ")",
+					"background-color": $color
+				});
+			$(this).remove();
+		});
+	};
+
+	var handleCard = function () {
+		var $item = $(".card__img");
+		$item.addClass("full-screen");
+		$(".card__img img").each(function () {
+			var $src = $(this).attr("src");
+			var $color = $(this).attr("data-color");
+
+			$(this)
+				.parent()
+				.css({
+					"background-image": "url(" + $src + ")",
+					"background-color": $color
+				});
+			$(this).remove();
+		});
+	};
+
+	var carouselAdjustment = function () {
+		var height = $(window).height() - $(".theme-header").outerHeight(); //getting windows height
+		$('.theme-carousel').css('height', (height + 1) + 'px'); //and setting height of carousel
+	};
+
+	var attachResizeEvent = function () {
+		$(window).on("resize", function () {
+			carouselAdjustment();
+		});
+	};
+
+	return {
+		init: function () {
+			handleCarousel(); // initial setup for carousel
+			handleCard(); // initial setup for card
+			carouselAdjustment();
+			attachResizeEvent();
+		}
+	};
+})();
+
+$(document).ready(function () {
+	Layout.init();
+});
